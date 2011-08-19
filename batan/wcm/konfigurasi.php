@@ -10,7 +10,6 @@ mysql_select_db($dbname);
 //=======================Library PKL Arief================
 require_once 'lib/db.php';
 $db = db::singleton();
-$db->config($dbhost,$dbuser,$dbpass,$dbname);
-$db->connect();
+
 
 ?>
