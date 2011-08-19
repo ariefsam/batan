@@ -150,9 +150,11 @@ class db {
     {
         $data = array();
         $x = mysql_query($this->query);
-        while($q = mysql_fetch_array($x))
-        {
-            $data[] = $q;
+        if($x){
+            while($q = mysql_fetch_array($x))
+            {
+                $data[] = $q;
+            }
         }
         return $data;
     }
