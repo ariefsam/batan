@@ -1,0 +1,392 @@
+*{
+	padding:0px;
+	margin:0px;
+	}
+
+body { background: #196bff url('../images/background.png') repeat-x;
+}
+
+#container{
+	width:980px;
+	margin: auto;
+	}
+
+#header {
+	height: 138px;
+	background: #aaa url('../images/header.jpg') no-repeat;
+}
+
+#englishver {
+float:right; 
+margin-right:10px; margin-top:4px;
+}
+
+#search {
+float:right; 
+margin-right:5px; margin-top:-4px;
+}
+
+input.search_input{
+width:120px;
+height:16px;
+border:1px #ddd9d9 solid;
+margin-top:2px;
+margin-left:830px;
+font-size:11px;
+color:#a3a096;
+background: #fff7df url('../images/lup.png') right no-repeat;
+border-radius:4px;
+}
+
+#header a {text-decoration: none;
+}
+#header a:hover{text-decoration: underline;
+}
+
+/*menu bar */
+ul#topnav {
+	margin-left:40px;
+	margin-top:-10px;
+	float: left	;
+	list-style: none; /*--Set relative positioning on the unordered list itself - not on the list item--*/
+	font-size: 1em;
+	background: url('../images/menu.jpg') repeat-x;
+	/*border-radius:20px;*/
+}
+ul#topnav li {
+	float: left;
+	border-left: 1px solid #555; /*--Divider for each parent level links--*/
+	height: 40px;
+}
+ul#topnav li a {
+	padding: 11px 43.8px;
+	display: block;
+	color: #f0f0f0;
+	text-decoration: none;
+}
+ul#topnav li:hover { background:#1f8af1; }
+/*--Notice the hover color is on the list item itself, not on the link. This is so it can stay highlighted even when hovering over the subnav--*/
+
+/*ul#topnav li span {
+	padding: 10px 10px;
+	position: absolute;
+	left:0px; top:40px;
+	display: none; --Hide by default--
+	width: 873px;
+	height:24px;
+	background: #1f8af1;
+	color: #fff;
+	font-size: 1em;
+	border-radius:6px;
+	--Bottom right rounded corner--
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	--Bottom left rounded corner--
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+ul#topnav li:hover span { display: block; } /*--Show subnav on hover--
+ul#topnav li span a { display: inline; } /*--Since we declared a link style on the parent list link, we will correct it back to its original state--
+ul#topnav li span a:hover {text-decoration: underline;}
+*/
+
+
+#submenu{
+	padding-top:8px;
+	width:898px;
+	height:32px;
+	background: url('../images/submenu_kecil.jpg') repeat-x;
+	margin-left:40px;
+	margin-top: 3px;
+	margin-bottom:5px;
+	float:left;
+	border-radius:30px;
+	}
+
+#navhistory{
+	margin-left:40px; 
+	margin-top:5px;
+	margin-bottom:5px;
+	height:80px;
+	width:890px;
+}
+
+.sub_menu {
+    text-align: center;
+    
+    margin: auto;
+    display: block;
+    width: 878px;
+    font-Family: Times;
+    text-align: center;
+    background: #0c6dfa url('../images/select_tengah.jpg');
+    color: #fff;
+    height: 30px;
+    padding: 10px;
+    display: none;
+}
+
+.sub_menu a {
+    font-size: 12pt;
+    text-decoration: none;
+    margin: 10px;
+    color: #fff;
+}
+
+.sub_menu a:hover{text-decoration: underline;
+}
+#shape_putih{
+	float:left;
+        width: 980px;
+	background: #fff;}
+
+a.text{
+text-decoration: none;
+}
+a:hover{
+text-decoration: underline;
+}
+
+#left{
+	float:left;
+	width:250px;
+	margin-top:5px;
+	}
+
+#right {
+	min-height:570px;
+	width:700px;
+	float:left;
+	margin-top:5px;
+}
+
+.clear {
+   clear: both;
+}
+
+.border_berita1{
+	margin-top:5px;
+	width: 680px;
+	border: 3px solid #b5ec95;
+	border-radius: 10px;
+	}
+
+.border_berita1 a {text-decoration: none;
+}
+.border_berita1 a:hover{text-decoration: underline;
+}
+
+.border_area{
+	width: 683px;
+	border: 3px solid #b5ec95;
+	border-radius: 10px;
+	margin-top:5px;
+	}
+
+.border_tamu {
+	margin-top:10px;
+	margin-left:20px;
+	width: 600px;
+	border:2px solid #458220;
+	border-radius:5px;
+}
+
+.border_tamu2{
+	margin-top:10px;
+	margin-left:70px;
+	width: 600px;
+	border:2px solid #458220;
+	border-radius:5px;
+}
+
+.border_admin {
+	margin-top:10px;
+	margin-left:70px;
+	width: 600px;
+	border:2px solid #458220;
+	border-radius:5px;
+	background:#aeabab;
+}
+
+.text_judul{
+	text-align:center;
+	font-size:14pt;
+	padding-bottom:10px;
+}
+	
+.area_judul{
+	margin: 5px 5px 0px 5px;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 14px;
+	color: #fff;
+	background: url('../images/rubrik2.jpg');
+	width: 300px;
+	height: 25px;
+	float:left;
+}
+
+.area_text{
+	text-align: left;
+	font-family: verdana;
+	font-size: 12px;
+	color: #000;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+	
+.area_text ol li p{
+	text-align: left;
+	font-family: verdana;
+	font-size: 10px;
+	color: #000;
+	margin-left: 10px;
+	text-decoration:none;
+}
+
+.text_subjudul{
+	text-align: left;
+	font-family: verdana;
+	font-size: 14px;
+	color: #196bff;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.more li:hover {
+ position: relative;
+}
+	
+/*HOME*/	
+.text_judulberita{
+	font-size: 1em;
+        padding-top: 3px;
+        margin-left: 5px;
+        
+}
+.text_judulberita a{
+    text-decoration: none;
+    color: #297b0a;
+		
+}
+.text_judulberita a:hover{ text-decoration: underline;
+}
+
+.text_isiberita{
+	font-family:Verdana;
+	font-size: 8pt;
+        margin: 2px 5px 5px 5px;
+	color:#000;
+        text-align: justify;
+}
+	
+.kotak_berita{
+        clear: both;
+        margin-left: 5px; 
+	width:668px;
+	height:30px;
+	background: url('../images/batang_berita.jpg')no-repeat;
+	}
+/*end HOME */
+
+.tulisan{
+	width:684px;
+	float:left;
+	color:#1f8af1;
+	text-align:center;
+}
+.tulisan a {text-decoration: none;
+}
+.tulisan a:hover{text-decoration: underline;
+}
+
+.gambar{
+	padding-left:40px;
+	text-align:center;
+	width:684px;
+	float:left;
+}
+
+.space{
+float:left;
+margin-left:20px;
+margin-top:38px;
+}
+
+.link{
+	float:left;
+	width:578px;
+	height:105px;
+	margin-left: 60px;
+	background: url('../images/link.png') no-repeat;
+}
+	
+.footer{
+	float:left;
+	width: 895px;
+	height: 80px;
+	margin-left:45px;
+	margin-top:10px;
+	background: url('../images/footer.png') no-repeat;
+	color: #fff;
+	padding-top:8px;
+}
+.footer a {text-decoration: none;
+}
+.footer a:hover{text-decoration: underline;
+}
+
+.galerifoto{
+font-size: 24px;
+font-Family: Times;
+text-align: center;
+background: #0c6dfa url("../images/select_tengah.jpg");
+width:1350px;
+color: #fff;
+}
+
+.galerifoto a{text-decoration: none; color: #fff;
+}
+
+.galerifoto a:hover{text-decoration: underline;
+}
+
+.rowA{
+	background:#568fed;
+	color:#383737;
+	font-family:Verdana;
+	font-size:12px;
+}
+
+.rowB{
+	background:#61bad8;
+	color:#383737;
+	font-family:Verdana;
+	font-size:12px;
+	}
+
+.rowC {
+	background:#635c5c;
+	color:#fff;
+	font-family:Verdana;
+	font-size:12px;
+}
+
+.pagination {
+    text-align: right;
+    padding-right: 30px;
+    color: #132b0a;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #297b0a;
+}
+
+.patination a:hover {
+    text-decoration: underline;
+}

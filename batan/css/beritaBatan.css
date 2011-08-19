@@ -1,0 +1,85 @@
+.berita {font-size:0.8em; width:199px; margin-left: 40px; border : 1px solid #0c6dfa} /*ukuran area kategori utama*/
+.berita ul {margin:0px; padding:0px;}
+.berita li {list-style: none;} 
+
+ul.top-level {background:#fff7df; border:none /*border : 1px solid #0c6dfa*/}
+ul.more {background:#fff7df;/*border : 1px solid #0c6dfa*/}
+ul.more li {
+ /*border-bottom: #0c6dfa solid;*/
+  text-align: right;
+ margin-right: 5px;
+ 
+}
+
+.berita a {
+ color: #458220;
+ cursor: pointer;
+ display:block;
+ height:25px;
+ line-height: 25px;
+ text-indent: 10px;
+ text-decoration:none;
+ width:100%;
+}
+
+.more a{
+color: red;
+}
+
+.berita ul li a:hover{
+ text-decoration:underline;
+}
+
+.berita li:hover {
+ 
+ position: relative;
+ color: #000;
+}
+
+.more ul li a:hover{
+ text-decoration:none;
+}
+
+.more li:hover {
+ 
+ position: relative;
+}
+
+
+/*ul.sub-level {
+    display: none;
+}
+li:hover .sub-level {
+    background: #fff7df;
+    border: #fff solid;
+    border-width: 1px;
+    display: block;
+    position: absolute;
+    left: 199px;
+    top: 2px;
+	border : 1px solid #0c6dfa;
+}
+ul.sub-level li {
+    border: none;
+    float:left;
+    width:200px;
+}
+
+/*Seconda Level
+#navigation .sub-level {
+    background: #fff7df;
+}
+
+/*Third Level
+#navigation .sub-level .sub-level {
+    background: #fff7df;
+	width:200px;
+} */
+
+/*RESET STYLES*/
+/*li:hover .sub-level .sub-level {
+	display:none;
+}
+.sub-level li:hover .sub-level {
+	display:block;
+}*/

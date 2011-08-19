@@ -1,0 +1,81 @@
+#kategori{
+font-size: 20px;
+font-Family: Times;
+text-align: center;
+background: #0c6dfa url('../images/select_tengah.jpg');
+width:200px;
+color: #fff;
+border : 1px solid #fff;
+margin-left: 40px;
+margin-top: 5px;
+}
+
+#navigation {font-size:0.8em; width:201px; margin-left: 40px;} /*ukuran area kategori utama*/
+#navigation ul {margin:0px; padding:0px;}
+#navigation li {list-style: none;} 
+
+ul.top-level2 {background:#fff7df; border : 1px solid #0c6dfa}
+ul.top-level2 li {
+ border-bottom: #0c6dfa solid;
+ border-top: #0c6dfa solid;
+ border-width: 0px;
+}
+
+#navigation a {
+ color: #458220;
+ cursor: pointer;
+ display:block;
+ height:25px;
+ line-height: 25px;
+ text-indent: 10px;
+ text-decoration:none;
+ width:100%;
+}
+#navigation ul li a:hover{
+ text-decoration:underline;
+ color: #000;
+}
+
+#navigation li:hover {
+ background: #bfcbf8;
+ position: relative;
+ color: #000;
+}
+
+ul.sub-level {
+    display: none;
+}
+li:hover .sub-level {
+    background: #fff7df;
+    border: #fff solid;
+    border-width: 1px;
+    display: block;
+    position: absolute;
+    left: 199px;
+    top: 2px;
+	border : 1px solid #0c6dfa;
+}
+ul.sub-level li {
+    border: none;
+    float:left;
+    width:199px;
+}
+
+/*Seconda Level*/
+#navigation .sub-level {
+    background: #fff7df;
+}
+
+/*Third Level*/
+#navigation .sub-level .sub-level {
+    background: #fff7df;
+	width:200px;
+}
+
+/*RESET STYLES*/
+li:hover .sub-level .sub-level {
+	display:none;
+}
+.sub-level li:hover .sub-level {
+	display:block;
+}

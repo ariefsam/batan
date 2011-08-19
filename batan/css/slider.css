@@ -1,0 +1,98 @@
+/*bagian ukuran slider*/
+#featured{ 
+float:left;
+	width:680px; /*ukuran bagian kiri*/
+	margin-left:40px;
+	margin-top:0px;
+	padding-right:205px; /*ukuran bagian kanan, tulisan*/
+	position:relative; 
+	border:5px solid #b5ec95; 
+	height:170px; 
+	background:#fff;
+}
+/*bagain kiri, gambar dan tulisan dibawahnya*/
+#featured ul.ui-tabs-nav{ 
+	position:absolute; 
+	top:0; left:680px;  /*ukuran bagian kiri*/
+	list-style:none; 
+	padding:0; margin:0; 
+	width:205; /*ukuran bagian kanan*/
+}
+#featured ul.ui-tabs-nav li{ 
+	padding:1px 0; padding-left:13px;  
+	font-size:12px; 
+	color:#666; 
+}
+#featured ul.ui-tabs-nav li img{ 
+	float:left; margin:2px 5px; 
+	background:#fff; 
+	padding:2px; 
+	border:1px solid #eee;
+}
+
+/*tulisan kanan*/
+#featured ul.ui-tabs-nav li span{ 
+	font-size:13px; font-family:Verdana; 
+	line-height:18px; 
+}
+/*tulisan kanan*/
+#featured li.ui-tabs-nav-item a{ 
+	display:block; 
+	height:55px; /*ukuran area tulisan gerak kanan*/
+	color:#333;  background:#fff; 
+	line-height:5px;
+	text-decoration:none; 
+	text-indent: 10px;
+        width: 190px;
+}
+/*tulisan kanan*/
+#featured li.ui-tabs-nav-item a:hover{ 
+	background:#f2f2f2; 
+	text-decoration:underline; 
+}
+#featured li.ui-tabs-selected{ 
+	background:url('../images/selected-item.gif') top left no-repeat;  
+}
+#featured ul.ui-tabs-nav li.ui-tabs-selected a{ 
+	background:#ccc; 
+}
+
+/*ukuran image bagian kiri*/
+#featured .ui-tabs-panel{ 
+	width:680px; height:170px;
+	background:#999; position:relative;
+}
+
+/*ukuran daerah dibawah image*/
+#featured .ui-tabs-panel .info{ 
+	position:absolute; 
+	top:130px; left:0; 
+	height:40px; 
+	background: url('../images/transparent-bg.png'); 
+}
+
+/*judul image*/
+#featured .info h2{ 
+	font-size:16px; font-family:Georgia, serif; 
+	color:#fff; padding:2px; margin:0;
+	overflow:hidden; 
+	text-indent: 5px;
+}
+
+/*tulisan keterangan bawah judul image*/
+#featured .info p{ 
+	margin:0 5px; 
+	font-family:Verdana; font-size:11px; 
+	line-height:15px; color:#f0f0f0;
+	text-indent: 5px;
+}
+#featured .info a{ 
+	text-decoration:none; 
+	color:#fff; 
+}
+#featured .info a:hover{ 
+	text-decoration:underline; 
+}
+#featured .ui-tabs-hide{ 
+	display:none; 
+}
