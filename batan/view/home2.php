@@ -85,7 +85,7 @@
                                 </div>
 
                                 <!--navigation history -->
-	<div id="navhistory" style="margin-top:-20px;">
+	<div id="navhistory">
 		<?php echo $navhistory ?>
 	</div>
                                 <!--Kolom Kiri-->
