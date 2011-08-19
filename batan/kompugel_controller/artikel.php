@@ -48,7 +48,7 @@ foreach($data_satker as $s)
         break;
 
         default:
-        $view_content = "view/depan.php";
+        $view_content = "view/artikel.php";
         require "view/home.php";
         break;
 }
