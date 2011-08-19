@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <base href="http://localhost/alhur/" />
+<!--        <style type="text/css">
+            @import url(css/style.css);
+        </style>-->
+        <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+        <script language="javascript" type="text/javascript" src="js/jquery.dropmenu.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="css/dropmenu.css" />
+        <script language="javascript" type="text/javascript">
+	$(document).ready(function() {
+		$('#foo').dropmenu({
+            effect	: 'fade',
+            nbsp	: true
+            });
+
+	});
+        </script>
+
+
+        <title>LDK Alhurriyyah</title>
+    </head>
+    <body>
+        <?php print_r($_GET);?>
+
+        <div id="container">
+            <div id="header" style="background: url('photo/photo1.jpg')">
+
+                <div id="top_menu">
+                    <ul id="foo" class="dropmenu">
+                        <li><span class="selected">TopItem 1</span></li>
+                        <li><span><a href="#">TopItem fsdddddddddddddd2</a></span>
+                            <ul>
+                                <li><a href="/">Subitem 2.1ddddddddddddddddddddddd dddddddddddddddd</a></li>
+                                <li><a href="/">Subitem 2.2</a></li>
+                                <li><span>Subitem 2.3rrrrrr</span>
+                                    <ul>
+                                        <li><a href="/">Subitem 2.1</a></li>
+                                        <li><a href="/">Subitem 2.2</a></li>
+                                        <li><span>Subitem 2.3rrrrrr</span>
+                                            <ul>
+                                                <li><a href="/">Subitem 2.1</a></li>
+                                                <li><a href="/">Subitem 2.2</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span><a href="/">TopItem 3</a></span></li>
+                    </ul>
+                    &nbsp;
+                </div>
+
+            </div>
+
+            <div id="menu">
+
+                <a href="#">Beranda</a><a href="#">Profil</a><a href="#">Layanan Publik</a><a href="#">Donasi</a><a href="#">Redaksi</a><a href="#">Kontak</a><a href="#">Pojok Salman</a><a href="#">Konsultasi</a>
+
+            </div>
+            <div class="c">
+                <div id="c1">
+                    <div class="d">
+                        <div class="judul">
+                            Opini
+                        </div>
+                        <div class="clear">
+
+                        </div>
+                        <div class="main_content">
+                            <div class="gambar">
+                                <img src="coba/dua.jpg" style="max-width: 150px" />
+                            </div>
+                            <a href="#" class="judul">Kisah Satu atau Dua Orang Ustadz yang Pergi Berdakwah</a><br />25/01/2007<br />
+                            <br />Hei. Telah terjadi kerumitan dalam kepala. Yang jadi biang keladi ialah sebuah mazhab filsafat berjuluk pragmatisme. Pragmatisme menegaskan bahwa segala sesuatunya bernilai benar, apabila membawa manfaat secara praktis bagi manusia. Manfaat secara praktis bagi manusia? Manusia yang mana dulu? Bukannya…
+                        </div>
+                        <div class="list_content">
+                            <ul class="list">
+                                <li>
+                                    <a href="#">Kisah Satu atau Dua Orang Ustadz yang Pergi Berdakwah</a> - 25/01/2007
+                                </li>
+                                <li>
+                                    <a href="#">Masyarakat Cenderung Menerima Hal Biasa daripada Hal yang Benar</a> - 25/01/2007
+                                </li>
+                                <li>
+                                    <a href="#">Kisah Satu atau Dua Orang Ustadz yang Pergi Berdakwah</a> - 25/01/2007
+                                </li>
+                                <li>
+                                    <a href="#">Masyarakat Cenderung Menerima Hal Biasa daripada Hal yang Benar</a> - 25/01/2007
+                                </li>
+                                <li>
+                                    <a href="#">Kisah Satu atau Dua Orang Ustadz yang Pergi Berdakwah</a> - 25/01/2007
+                                </li>
+                                <li>
+                                    <a href="#">Masyarakat Cenderung Menerima Hal Biasa daripada Hal yang Benar</a> - 25/01/2007
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clear">
+
+                        </div>
+                    </div>
+                </div>
+                <div id="c2">
+                    <div class="judul">Follow us</div><br />
+                    <center>
+
+                        <table width="90%" class="cc"><tr>
+                                <td width="30%">
+                                    <a href="#"><img src="images/facebook.png" alt="Facebook" width="50px" /></a><br />
+                                    Facebook
+                                </td>
+                                <td width="30%">
+                                    <a href="#"><img src="images/twitter.png" alt="Twitter" width="50px" /></a><br />
+                                    Twitter
+                                </td>
+                                <td width="30%">
+                                    <a href="#"><img src="images/email.png" alt="Email" width="50px" /></a><br />
+                                    Email
+                                </td>
+
+                            </tr>
+                        </table>
+                    </center>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div id="footer"><br />
+                powered by: kompugel
+
+            </div>
+        </div>
+    </body>
+</html>
