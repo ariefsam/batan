@@ -17,7 +17,7 @@ class db {
 
     private static $instance;
     public $query="";
-    private $num_rows;
+    private $num_rows=0;
     private $result=NULL;
     private $where=NULL;
     private $limit_start=0;
@@ -48,7 +48,7 @@ class db {
         trigger_error('Clone is not allowed.', E_USER_ERROR);
     }
 
-    public function config($host,$username,$password,$dbname)
+    public static function config($host,$username,$password,$dbname)
     {
         $this->host = $host;
         $this->username = $username;
@@ -92,8 +92,8 @@ class db {
         $i=1;
         foreach ($data as $d)
         {
-            if($i==1) $query .= ") VALUES ('" . $data[$key[0]] . "'";
-            else $query .= ",'$d'";
+            if($i==1) $query .= ") VALUES (\"" . $data[$key[0]] . "\"";
+            else $query .= ",\"" . $d . "\"";
             $i++;
         }
 
@@ -111,7 +111,7 @@ class db {
         $i = 0;
         while($key[$i])
         {
-            $query .= $key[$i] . "='" . $data[$key[$i]] . "'," ;
+            $query .= $key[$i] . "=\"" . $data[$key[$i]] . "\"," ;
             $i++;
         }
 
@@ -150,15 +150,18 @@ class db {
     {
         $data = array();
         $x = mysql_query($this->query);
-        while($q = mysql_fetch_array($x))
-        {
-            $data[] = $q;
+        if($x){
+            while($q = mysql_fetch_array($x))
+            {
+                $data[] = $q;
+            }
         }
         return $data;
     }
 
     function num_rows()
     {
+        //return $this->num_rows;
         return mysql_num_rows($this->result);
     }
 
