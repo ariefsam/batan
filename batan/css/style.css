@@ -179,6 +179,10 @@ text-decoration: underline;
 }
 
 .border_area{
+        text-indent: 30px;
+        text-align:justify;
+        font-size: 10pt;
+        padding:15px;
 	width: 683px;
 	border: 3px solid #b5ec95;
 	border-radius: 10px;
