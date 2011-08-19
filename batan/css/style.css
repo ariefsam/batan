@@ -106,9 +106,10 @@ ul#topnav li span a:hover {text-decoration: underline;}
 	}
 
 #navhistory{
+        float:left;
 	margin-left:40px; 
-	margin-top:5px;
-	margin-bottom:5px;
+	margin-top:-5px;
+	margin-bottom:-65px;
 	height:80px;
 	width:890px;
 }
