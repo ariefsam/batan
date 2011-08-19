@@ -1,0 +1,12 @@
+ErrorDocument 404 "<html><head><title>404 Not Found</title></head>Error 404</html>"
+ErrorDocument 403 "<html><head><title>403 Porbidden</title></head><body><h2><tt>403 Akses file tidak diizinkan!</tt></h2></body></html>"
+
+<Files ~ "^\.ht">
+ Order allow,deny
+ Deny from all
+ Satisfy All
+</Files>
+
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^portal/(.+)\.(htm|html)$ main.php?controller=$1 [NC]
