@@ -19,7 +19,7 @@
                         $(document).ready(function(){
                             $("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
                         });
-                        
+
                         function sub(id){
                             $('.sub_menu').slideUp('fast',
                             function(){$('#sub_' + id).slideDown('slow')}
@@ -39,7 +39,7 @@
                                 <!--search&english ver-->
                                 <div id ="search">
                                     <div id="englishver">
-                                        <img src="images/bendera_inggris.jpg" alt="" /> 
+                                        <img src="images/bendera_inggris.jpg" alt="" />
                                         <a href=""><font color="fff7df">English Version</font></a>
                                     </div>
                                     <input  name="search" type="text" class="search_input" value="search" onFocus="if(this.value=='search'){this.value=''}" onBlur="if(this.value==''){this.value='search'}" />
@@ -124,7 +124,7 @@
                                 <!--end of slider-->
 
                                 <!--Kolom Kiri-->
-                                <div id="left"> 
+                                <div id="left">
                                     <!--kategori-->
                                     <div id="kategori">Kategori</div> <!--Kategori-->
                                     <div id="navigation">
@@ -209,7 +209,7 @@
                                                 </ul>
                                             </li>
                                         </ul>
-                                    </div> 
+                                    </div>
                                     <!--End Kategori-->
 
                                     <!--BERITA NUKLIR Terkini-->
@@ -223,7 +223,7 @@
                                         <ul class="more">
                                             <li><a href="portal/berita/arsipberita.html">Selengkapnya...</a></li>
                                         </ul>
-                                    </div> 
+                                    </div>
                                     <!--end BERITA NUKLIR-->
 
                                     <!--Artikel-->
@@ -237,7 +237,7 @@
                                         <ul class="more">
                                             <li><a href="portal/artikel/arsipartikel.html">Selengkapnya...</a></li>
                                         </ul>
-                                    </div> 
+                                    </div>
                                     <!--end of Artikel-->
 
                                     <!--Polling-->
@@ -280,13 +280,13 @@
                                                                                 <!-- bagian tengah-->
                                                                                 <div id="right"><?php include $view_content ?></div> <!-- end of right -->
                                                                                 <div class="clear">
-                                                                                </div>			
+                                                                                </div>
                                                                                 <!--footer-->
                                                                                 <div class="footer">
                                                                                     <p align="center" style="margin-left:70px; margin-top: -5px;"> <font size=2.5>Kantor Pusat BATAN</br>
 		Jl. Kuningan Barat, Mampang Prapatan, Jakarta 12710</br></p>
-                                                                                    &nbsp &nbsp &nbsp <font size=1>Copyright (c) 2011 | Website created by BATAN RANGER</font>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Telp.(021) 525-1109, Fax.(021) 525-1110, email: humas@batan.go.id 
-                                                                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/home/faq.html"><font size=2 color= 83df4d>Faq</font><a> | <a href=""><font size=2 color= 83df4d>Sitemap</font><a> | <a href="kontak.html"><font size=2 color= 83df4d>Kontak</font><a></font></p>
+                                                                                    &nbsp &nbsp &nbsp <font size=1>Copyright (c) 2011 | Website created by BATAN RANGER</font>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Telp.(021) 525-1109, Fax.(021) 525-1110, email: humas@batan.go.id
+                                                                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/home/faq.html"><font size=2 color= 83df4d>Faq</font><a> | <a href=""><font size=2 color= 83df4d>Sitemap</font><a> | <a href="introbatan.swf"><font size=2 color= 83df4d>Credit</font><a></font></p>
                                                                                                             </div>
                                                                                                             <!-- end of footer-->
                                                                                                             </div>
