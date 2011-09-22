@@ -104,90 +104,6 @@ border: 2px solid #1a70a1;
                 flowplayer("player8", "Videos/flowplayer-3.0.5.swf");
             </script>
             <!-- Flowplayer END        -->
-           </div>
-
-            <div class="contentdiv" style="center left no-repeat">
-            <!-- Flowplayer START -->
-            <script type="text/javascript" src="Videos/flowplayer-3.0.5.min.js"></script>
-            <a  href="../~multimedia/Videos/tvri_slamet_raharjo1.flv" style="display:block;width:450px;height:350px" id="player7">
-
-            <img src="images/17Feb10_103540_tvri_slamet_raharjo.jpg" style="display:block;width:450px;height:350px" alt=" " /></a>
-            <script type="text/javascript">
-                flowplayer("player7", "Videos/flowplayer-3.0.5.swf");
-            </script>
-            <!-- Flowplayer END        -->
-           </div>
-
-            <div class="contentdiv" style="center left no-repeat">
-            <!-- Flowplayer START -->
-            <script type="text/javascript" src="Videos/flowplayer-3.0.5.min.js"></script>
-            <a  href="../~multimedia/Videos/nuklir_karunia_illahi1.flv" style="display:block;width:450px;height:350px" id="player6">
-
-            <img src="images/21Aug09_105945_nuklir_karunia_illlahi.jpg" style="display:block;width:450px;height:350px" alt="Nuklir Karunia Illahi" /></a>
-            <script type="text/javascript">
-                flowplayer("player6", "Videos/flowplayer-3.0.5.swf");
-            </script>
-            <!-- Flowplayer END        -->
-           </div>
-
-            <div class="contentdiv" style="center left no-repeat">
-            <!-- Flowplayer START -->
-            <script type="text/javascript" src="Videos/flowplayer-3.0.5.min.js"></script>
-            <a  href="../~multimedia/Videos/panen_bestari_3.flv" style="display:block;width:450px;height:350px" id="player5">
-
-            <img src="Videos/img/21Aug09_105452_panen_bestari3.jpg" style="display:block;width:450px;height:350px" alt="Panen Raya Bestari III" /></a>
-            <script type="text/javascript">
-                flowplayer("player5", "Videos/flowplayer-3.0.5.swf");
-            </script>
-            <!-- Flowplayer END        -->
-           </div>
-
-            <div class="contentdiv" style="center left no-repeat">
-            <!-- Flowplayer START -->
-            <script type="text/javascript" src="Videos/flowplayer-3.0.5.min.js"></script>
-            <a  href="../~multimedia/Videos/panen_bestari_2.flv" style="display:block;width:450px;height:350px" id="player4">
-
-            <img src="Videos/img/21Aug09_105354_panen_bestari2.jpg" style="display:block;width:450px;height:350px" alt="Panen Raya Bestari II" /></a>
-            <script type="text/javascript">
-                flowplayer("player4", "Videos/flowplayer-3.0.5.swf");
-            </script>
-            <!-- Flowplayer END        -->
-           </div>
-
-            <div class="contentdiv" style="center left no-repeat">
-            <!-- Flowplayer START -->
-            <script type="text/javascript" src="Videos/flowplayer-3.0.5.min.js"></script>
-            <a  href="../~multimedia/Videos/panen_bestari_1.flv" style="display:block;width:450px;height:350px" id="player3">
-
-            <img src="Videos/img/21Aug09_105324_panen_bestari1.jpg" style="display:block;width:450px;height:350px" alt="Panen Raya Bestari I" /></a>
-            <script type="text/javascript">
-                flowplayer("player3", "Videos/flowplayer-3.0.5.swf");
-            </script>
-            <!-- Flowplayer END        -->
-           </div>
-
-            <div class="contentdiv" style="center left no-repeat">
-            <!-- Flowplayer START -->
-            <script type="text/javascript" src="Videos/flowplayer-3.0.5.min.js"></script>
-            <a  href="../~multimedia/Videos/bankjaringan.flv" style="display:block;width:450px;height:350px" id="player2">
-
-            <img src="Videos/img/21Aug09_105242_bankjaringan2.jpg" style="display:block;width:450px;height:350px" alt="Bank Jaringan" /></a>
-            <script type="text/javascript">
-                flowplayer("player2", "Videos/flowplayer-3.0.5.swf");
-            </script>
-            <!-- Flowplayer END        -->
-           </div>
-
-            <div class="contentdiv" style="center left no-repeat">
-            <!-- Flowplayer START -->
-            <script type="text/javascript" src="Videos/flowplayer-3.0.5.min.js"></script>
-            <a  href="../~multimedia/Videos/pltnjadioke.flv" style="display:block;width:450px;height:350px" id="player1">
-
-            <img src="Videos/img/21Aug09_105113_nusaki.jpg" style="display:block;width:450px;height:350px" alt="Petualangan Nusaki" /></a>
-            <script type="text/javascript">
-                flowplayer("player1", "Videos/flowplayer-3.0.5.swf");
-            </script>
-            <!-- Flowplayer END        -->
 			</div>
 			</div>
       <div id="paginate-slider5" style="background:white; margin-left:140px">
@@ -197,12 +113,6 @@ border: 2px solid #1a70a1;
 		   <a href="#" class="toc someotheclass1" title ="Selamat Pagi Nusantara"><img src="images/01Mar10_113750_selamat_pagi_nusantara.jpg" /></a>
 		   <a href="#" class="toc someotheclass1" title ="23Feb10_092252_tvri_slamet_raharjo.jpg"><img src="images/17Feb10_103540_tvri_slamet_raharjo.jpg" /></a>
 		   <a href="#" class="toc someotheclass1" title =" "><img src="images/17Feb10_103540_tvri_slamet_raharjo.jpg" /></a>
-		   <a href="#" class="toc someotheclass1" title ="Nuklir Karunia Illahi"><img src="images/21Aug09_105945_nuklir_karunia_illlahi.jpg" /></a>
-		   <a href="#" class="toc someotheclass1" title ="Panen Raya Bestari III"><img src="Videos/img/21Aug09_105452_panen_bestari3.jpg" /></a>
-		   <a href="#" class="toc someotheclass1" title ="Panen Raya Bestari II"><img src="Videos/img/21Aug09_105354_panen_bestari2.jpg" /></a>
-		   <a href="#" class="toc someotheclass1" title ="Panen Raya Bestari I"><img src="Videos/img/21Aug09_105324_panen_bestari1.jpg" /></a>
-		   <a href="#" class="toc someotheclass1" title ="Bank Jaringan"><img src="Videos/img/21Aug09_105242_bankjaringan2.jpg" /></a>
-		   <a href="#" class="toc someotheclass1" title ="Petualangan Nusaki"><img src="Videos/img/21Aug09_105113_nusaki.jpg" /></a>
 		   </div>
 
       <script type="text/javascript">

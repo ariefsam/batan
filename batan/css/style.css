@@ -17,13 +17,14 @@ body { background: #196bff url('../images/background.png') repeat-x;
 }
 
 #englishver {
-float:right; 
-margin-right:10px; margin-top:4px;
+float:left;
+margin-left:780px; margin-top:-3px;
+font-size: 10pt;
 }
 
 #search {
 float:right; 
-margin-right:5px; margin-top:-4px;
+margin-right:40px; margin-top:-3px;
 }
 
 input.search_input{

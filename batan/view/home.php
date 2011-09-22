@@ -38,16 +38,26 @@
                             <div id="header">	<!--header-->
                                 <!--search&english ver-->
                                 <div id ="search">
-                                    <div id="englishver">
-                                        <img src="images/bendera_inggris.jpg" alt="" />
+                                   
+                                    <div id="cse-search-form" style="width: 100%; margin-top:5px; margin-left:40px; ">Loading</div>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+  google.load('search', '1', {language : 'id', style : google.loader.themes.GREENSKY});
+  google.setOnLoadCallback(function() {
+    var customSearchControl = new google.search.CustomSearchControl('009265042000369767317:b-r-k1akfao');
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    var options = new google.search.DrawOptions();
+    options.setSearchFormRoot('cse-search-form');
+    customSearchControl.draw('cse', options);
+  }, true);
+</script>
+                                </div>
+                                 <div id="englishver">
+                                        <img src="images/bendera_inggris.jpg" alt=""/>
                                         <a href=""><font color="fff7df">English Version</font></a>
                                     </div>
-                                    <input  name="search" type="text" class="search_input" value="search" onFocus="if(this.value=='search'){this.value=''}" onBlur="if(this.value==''){this.value='search'}" />
-                                    <a href="" ><img alt="" src=""  align="right"; style="margin-top:2px;" src="images/go.jpg"/></a>
-                                </div>
                                 <!--end of search&english ver-->
                             </div> <!--end of header-->
-
                             <!--background putih-->
                             <div id="shape_putih">
                                 <div>
@@ -278,7 +288,9 @@
                                                                                 </div> <!-- end of left -->
 
                                                                                 <!-- bagian tengah-->
-                                                                                <div id="right"><?php include $view_content ?></div> <!-- end of right -->
+                                                                                <div id="right">
+                                                                                    <div id="cse" style="width:98%;"></div>
+                                                                                <?php include $view_content ?></div> <!-- end of right -->
                                                                                 <div class="clear">
                                                                                 </div>
                                                                                 <!--footer-->
