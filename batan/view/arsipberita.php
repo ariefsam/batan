@@ -71,11 +71,11 @@
 		<br></div><br/>
 
 
-                <table style="margin-left: 10px">
+                <table style="list-style-type: none;  margin-top: -20px; font-family: verdana; font-size: 13px; text-decoration: none;">
                      <?php foreach ($list_arsip_berita  as $arsipberita) {?>
                 <tr >
                    
-                    <td width="400px"><a href="#"><?php echo $arsipberita['judul']?>  </a></td>
+                    <td width="400px" style="padding: 10px;"><a href="portal/berita/<?php echo $arsipberita['id_berita'] ?>.html"><?php echo $arsipberita['judul']?>  </a></td>
 		<td width="150px" style="margin-left: 450px; margin-right:570px; "> <?php echo $arsipberita['waktu_kirim']?>  </td>
 		<td width="100px"> <?php echo $satker[$arsipberita['pengirim']];?> </td>
                 </tr>

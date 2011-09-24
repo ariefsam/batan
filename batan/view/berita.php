@@ -6,10 +6,9 @@
 <div><p class="area_judul"><span>Berita BATAN</span></p> </div><br><br>
 				<div class="text_judul">
 		<?php echo $berita['judul']?></div>
-                <p class="area_text"><?php echo $berita['deskripsi'];?></p></br>
-				<p class="area_text"><center><img src="sejarah1.jpg" border="0" name="sejarah batan" alt="" width=80%></center></p>
-		<br>
-				<div class="area_text"><a href="arsipberita.html"><font style="float:left; margin-left:2px;" color=#FF0000>Klik Disini</font></a>&nbspuntuk melihat berita lainnya</div>
+                <p class="area_text"><?php echo $berita['deskripsi']; ?></p></br>
+				
+				<div class="area_text"><a href="portal/berita/arsipberita.html"><font style="float:left; margin-left:2px;" color=#FF0000>Klik Disini</font></a>&nbspuntuk melihat berita lainnya</div>
 
                                 <br>
                                <hr width=90% style="margin-left: 10px; margin-right: 20px;"></hr>

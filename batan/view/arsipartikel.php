@@ -3,11 +3,12 @@
 
 
 		<br>
-				<ul class="area_text" style="list-style-type: none; margin-top: -20px; font-family: verdana; font-size: 13px; text-decoration: none;";>
+				<ul class="area_text" style="list-style-type: none; margin-top: -20px; font-family: verdana; font-size: 13px; text-decoration: none;">
 
                                      <?php foreach ($list_arsip_artikel  as $arsipartikel) {?>
                 
-                                    <li style="margin-left:15px; padding-top:5px;"><a href="#"> <?php echo $arsipartikel['judul']?>   </a></li>
+                                    <li style="margin-left:0px; padding:10px;"><a href="portal/artikel/<?php echo $arsipartikel['id'] ?>.html"><?php echo $arsipartikel['judul']?>   </a></li>
+
 
                                     <?php }?>
 				</ul>

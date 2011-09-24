@@ -74,8 +74,10 @@
                                         </li>
                                         <li><a href="http://www.webmail.batan.go.id"><b>Webmail</b></a>
                                         </li>
-                                        <li><a href="portal/home/kontak.html"><b>Kontak</b></a>
+                                        <li><a href="portal/home/kontak.html" onclick="sub('kontak'); return false"><b>Kontak</b></a>
+
                                         </li>
+                                        
                                     </ul>
                                 </div>
                                 <div class="clear"></div>
@@ -90,6 +92,9 @@
                                 </div>
                                 <div id="sub_galeri" class="sub_menu">
                                     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/galerifoto.html">Foto</a>|<a href="portal/home/galerivideo.html">Video</a>
+                                </div>
+                                <div id="sub_kontak" class="sub_menu">
+                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/home/kontak.html">Lokasi</a>|<a href="portal/home/bukutamu.html">Buku Tamu</a>
                                 </div>
 
                                 <div id="submenu"> <!--marquee&submenu-->
@@ -225,9 +230,9 @@
                                     <!--BERITA NUKLIR Terkini-->
                                     <div id="kategori">Berita Nuklir Terkini</div>
                                     <div class="berita">
-                                        <ul class="top-level">
+                                        <ul class="top-level" >
                                             <?php foreach ($list_berita_nuklir as $berita) { ?>
-                                                <li><a href="berita_nuklir_terkini.html"><?php echo substr($berita['judul'], 0, 27) ?>...</a></li>
+                                                <li><a href="portal/berita/<?php echo $berita['id_berita']?>.html"><?php echo substr($berita['judul'], 0, 22) ?>...</a></li>
                                             <?php } ?>
                                         </ul>
                                         <ul class="more">
@@ -239,9 +244,9 @@
                                     <!--Artikel-->
                                     <div id="kategori">Artikel</div>
                                     <div class="berita">
-                                        <ul class="top-level">
+                                        <ul class="top-level" style="padding: 0px;">
                                             <?php foreach ($list_artikel as $pie) { ?>
-                                                <li><a href="portal/artikel/<?php echo $pie['id'] ?>.html"><?php echo substr($pie['judul'], 0, 25) ?>...</a></li>
+                                                <li><a href="portal/artikel/<?php echo $pie['id'] ?>.html"><?php echo substr($pie['judul'], 0, 22) ?>...</a></li>
                                             <?php } ?>
                                         </ul>
                                         <ul class="more">
@@ -289,7 +294,8 @@
 
                                                                                 <!-- bagian tengah-->
                                                                                 <div id="right">
-                                                                                    <div id="cse" style="width:98%;"></div>
+                                                                                    <!--<div id="cse" style="width:98%;"></div>-->
+                                                 
                                                                                 <?php include $view_content ?></div> <!-- end of right -->
                                                                                 <div class="clear">
                                                                                 </div>

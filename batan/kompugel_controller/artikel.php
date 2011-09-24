@@ -26,8 +26,6 @@ $db->where('1');
 $db->get('PIE', 0, 5);
 $list_artikel = $db->get_fetch();
 
-
-
 $db->where(1);
 $db->get('satker');
 $data_satker = $db->get_fetch();
