@@ -8,8 +8,8 @@
 					<ul>
 						<li style="margin:30px;"><a href="portal/home/profil.html" title="Profil BATAN">Profil BATAN</a> </li>
 						<li style="margin:30px;"><a href="portal/home/sejarah.html" title="Sejarah">Sejarah BATAN</a></li>
-						<li style="margin:30px;"><a href="portal/home/strukturorganisasi" title="Struktur Organisasi">Struktur Organisasi</a></li>
-						<li style="margin:30px;"><a href="portal/home/kerjasama.hml" title="Kerjasama">Kerjasama</a></li>
+						<li style="margin:30px;"><a href="portal/home/strukturorganisasi.html" title="Struktur Organisasi">Struktur Organisasi</a></li>
+						<li style="margin:30px;"><a href="portal/home/kerjasama.html" title="Kerjasama">Kerjasama</a></li>
 					</ul>
 				</p>
 		</div>

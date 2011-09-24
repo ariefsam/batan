@@ -59,3 +59,8 @@ function from_date($date){
         );
         return $data[2] . "-" . $bulan[$data[1]] . "-" . $data[0];
     }
+
+    function from_datetime($datetime){
+        $data = explode(" ", $datetime);
+        return from_date($data[0]) . ' ' . $data[1];
+    }

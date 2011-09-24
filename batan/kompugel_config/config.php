@@ -2,7 +2,7 @@
 class config {
 // Contoh: http://example.com/
 
-var $base_url = "http://localhost/batan/batan/";
+var $base_url = "http://localhost/batan/";
 
 
 // Database

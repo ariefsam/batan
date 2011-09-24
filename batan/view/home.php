@@ -74,7 +74,7 @@
                                         </li>
                                         <li><a href="http://www.webmail.batan.go.id"><b>Webmail</b></a>
                                         </li>
-                                        <li><a href="kontak.html"><b>Kontak</b></a>
+                                        <li><a href="portal/home/kontak.html"><b>Kontak</b></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -86,7 +86,7 @@
                                     <a href="portal/home/kerjasama.html">Kerjasama</a>
                                 </div>
                                 <div id="sub_agenda" class="sub_menu">
-                                    <a href="#">Program Tahunan</a>|<a href="#">Program Pelatihan</a>|<a href="#">Program Coaching</a>
+                                    <a href="portal/home/programtahunan.html">Program Tahunan</a>|<a href="portal/home/programpelatihan.html">Program Pelatihan</a>|<a href="portal/home/programcoaching.html">Program Coaching</a>
                                 </div>
                                 <div id="sub_galeri" class="sub_menu">
                                     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/galerifoto.html">Foto</a>|<a href="portal/home/galerivideo.html">Video</a>
@@ -274,7 +274,7 @@
                                                                                     <ul class="top-level">
                                                                                         <table>
                                                                                             <tr><td><a href="http://www.facebook.com/pages/Badan-Tenaga-Nuklir-Nasional-BATAN/222822377768877"><img style="margin-left:30px; margin-top:5px;" src="images/fb_icon3.png" alt="" title="Facebook"/></a></td>
-                                                                                                <td><a href="#"><img style="margin-left:0px; margin-top:5px;" src="images/twitter_icon.png" alt="" title="Twitter"/></a></td>
+                                                                                                <td><a href="http://twitter.com/#!/Batan_RI"><img style="margin-left:0px; margin-top:5px;" src="images/twitter_icon.png" alt="" title="Twitter"/></a></td>
                                                                                         </table>
                                                                                     </ul><br /><br />
                                                                                 </div>
@@ -298,7 +298,7 @@
                                                                                     <p align="center" style="margin-left:70px; margin-top: -5px;"> <font size=2.5>Kantor Pusat BATAN</br>
 		Jl. Kuningan Barat, Mampang Prapatan, Jakarta 12710</br></p>
                                                                                     &nbsp &nbsp &nbsp <font size=1>Copyright (c) 2011 | Website created by BATAN RANGER</font>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Telp.(021) 525-1109, Fax.(021) 525-1110, email: humas@batan.go.id
-                                                                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/home/faq.html"><font size=2 color= 83df4d>Faq</font><a> | <a href=""><font size=2 color= 83df4d>Sitemap</font><a> | <a href="introbatan.swf"><font size=2 color= 83df4d>Credit</font><a></font></p>
+                                                                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/home/faq.html"><font size=2 color= 83df4d>Faq</font><a> | <a href="portal/home/sitemap.html"><font size=2 color= 83df4d>Sitemap</font><a> | <a href="introbatan.swf"><font size=2 color= 83df4d>Credit</font><a></font></p>
                                                                                                             </div>
                                                                                                             <!-- end of footer-->
                                                                                                             </div>
