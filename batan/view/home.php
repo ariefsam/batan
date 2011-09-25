@@ -294,7 +294,7 @@
 
                                                                                 <!-- bagian tengah-->
                                                                                 <div id="right">
-                                                                                    <!--<div id="cse" style="width:98%;"></div>-->
+                                                                                    <div id="cse" style="width:98%;"></div>
                                                  
                                                                                 <?php include $view_content ?></div> <!-- end of right -->
                                                                                 <div class="clear">

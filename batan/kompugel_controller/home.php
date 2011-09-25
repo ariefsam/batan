@@ -83,12 +83,7 @@ switch ($param[1])
 		<a href="portal/home/agenda.html" class="text" ><font color=#3b33e7 size=2px>Agenda</font></a><font color=#297b0a size=2px> > </font>
                 <font color=#535050 size=2px>Program Tahunan</font>';
         $view_content = "view/programtahunan.php";
-        $db->where('1 limit 0,20');
-        $db->get('agenda');
-        $agenda = $db->get_fetch();
-        $db->where(1);
-        $db->get('agenda_kategori');
-        $kategori_agenda = $db->get_fetch();
+        
         require "view/home2.php";
         break;
 
@@ -112,35 +107,10 @@ switch ($param[1])
      case "kontak":
         $navhistory = '<a href="" class="text" ><font color=#3b33e7 size=2px>Beranda</font></a><font color=#297b0a size=2px> > </font>
                 <font color=#535050 size=2px>Kontak</font>';
-        $view_content = "view/kontak.php";
-         if($param[2] && $param[2]>0) $start=$param[2]; else $start=0;
         require_once('recaptcha/recaptchalib.php');
         $privatekey = "6LcP08YSAAAAAIqW7W9WnncTW4gx7i3wZ_HQrNqK";
         $publickey = "6LcP08YSAAAAAP3QZKfXDazMYd9_yT4zgnAczu9t";
-        if ($_POST["recaptcha_response_field"]) {
-                $resp = recaptcha_check_answer ($privatekey,
-                                                $_SERVER["REMOTE_ADDR"],
-                                                $_POST["recaptcha_challenge_field"],
-                                                $_POST["recaptcha_response_field"]);
-
-                if ($resp->is_valid) {
-                        $data = array(
-                            "nama"  => $_POST['nama'],
-                            "email" => $_POST['email'],
-                            );
-                        $data['tanggal'] = date("Y-m-d H:i:s");
-                        $x = $db->insert('kritik_saran_keluhan', $data);
-                        if($x) $_POST['isi']="";
-                } else {
-                        # set the error code so that we can display it
-                        $error = $resp->error;
-                        $notif = '<br /><span style="color: red">Kode kemanan harus diisi</span>';
-                }
-        }
-        else $notif='<br /><span style="color: red">Kode kemanan harus diisi</span>';
-
-
-
+        $view_content = "view/kontak.php";     
         require "view/home2.php";
         break;
 
@@ -502,7 +472,7 @@ switch ($param[1])
 
                             );
                         $data['tanggal'] = date("Y-m-d H:i:s");
-                        $x = $db->insert('komenta_berita_nuklir', $data);
+                        $x = $db->insert('komentar_berita_nuklir', $data);
                         if($x) $_POST['isi']="";
                 } else {
                         # set the error code so that we can display it

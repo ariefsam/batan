@@ -1,9 +1,40 @@
 <?php if(!$gabung) die();
 require "lib/date.php";
+ require_once('recaptcha/recaptchalib.php');
+if($_POST['nama']){
+   
+        $privatekey = "6LcP08YSAAAAAIqW7W9WnncTW4gx7i3wZ_HQrNqK";
+        $publickey = "6LcP08YSAAAAAP3QZKfXDazMYd9_yT4zgnAczu9t";
+        if ($_POST["recaptcha_response_field"]) {
+                $resp = recaptcha_check_answer ($privatekey,
+                                                $_SERVER["REMOTE_ADDR"],
+                                                $_POST["recaptcha_challenge_field"],
+                                                $_POST["recaptcha_response_field"]);
+
+                if ($resp->is_valid) {
+                        $data = array(
+                            "nama"  => $_POST['nama'],
+                            "komentar"   => $_POST['isi'],
+                            "email" => $_POST['email'],
+                            "website" => $_POST['website'],
+                            "id_berita" => $_POST['id_berita']
+                            );
+                        $data['tgl'] = date("Y-m-d H:i:s");
+                        $x = $db->insert('buku_tamu', $data);
+                        if($x) $_POST['isi']="";
+                } else {
+                        # set the error code so that we can display it
+                        $error = $resp->error;
+                        $notif = '<br /><span style="color: red">Kode kemanan harus diisi</span>';
+                }
+        }
+        else $notif='<br /><span style="color: red">Kode kemanan harus diisi</span>';
+}
+
 $db->where('id_berita=' . intval($param[1]));
 $db->get('berita');
-$berita = $db->get_fetch();
-$berita = $berita[0];
+$beritas = $db->get_fetch();
+$beritas = $beritas[0];
 
 //komentar
 $db->get('berita_komentar', 0, 5);

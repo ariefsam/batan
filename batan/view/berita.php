@@ -5,8 +5,8 @@
 		<div class="border_area">
 <div><p class="area_judul"><span>Berita BATAN</span></p> </div><br><br>
 				<div class="text_judul">
-		<?php echo $berita['judul']?></div>
-                <p class="area_text"><?php echo $berita['deskripsi']; ?></p></br>
+		<?php echo $beritas['judul']?></div>
+                <p class="area_text"><?php echo $beritas['deskripsi']; ?></p></br>
 				
 				<div class="area_text"><a href="portal/berita/arsipberita.html"><font style="float:left; margin-left:2px;" color=#FF0000>Klik Disini</font></a>&nbspuntuk melihat berita lainnya</div>
 
@@ -39,6 +39,8 @@
                           $publickey = "6LcP08YSAAAAAP3QZKfXDazMYd9_yT4zgnAczu9t ";
                           echo recaptcha_get_html($publickey);
                         ?> </td>
+            <tr><td></td><td></td><td></td>
+                    <td style="text-align: right"><input type="submit" class="" value="  Tambahkan Pesan  " name="" title="Klik untuk menambahkan pesan Anda" id=""/></td></tr>
         </table>
 	</form>
 <?php foreach($list_komentar as $komentar) {?>

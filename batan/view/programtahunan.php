@@ -4,21 +4,67 @@
         padding: 5px;
     }
 </style>
+<?php
+//$thn=date('Y');
+//if($_POST['kategori']) {
+//    $kat = $_POST['kategori'];
+//    $where1='kategori = '.$kat.'';
+//}else {
+//    $where1="1";
+//}
+//
+//if($_POST['tahun']) {
+//    $tgl = $_POST['tahun'];
+//    $where2="Year(tgl)=".$tgl;
+//}else {
+//    $where2="";
+//}
+//
+//if($_POST['penyelenggara']) {
+//    $p = $_POST['penyelenggara'];
+//    $where3 = "id_satker=".$p;
+//}else {
+//    $where3="";
+//}
+//if($_POST['kategori'] && $_POST['tahun'] && $POST['penyelenggara']){
+//    $where = $where1.' AND '.$where2.' AND '. $where3;
+//}else{
+//    $where = $where1.' OR '.$where2.' OR '. $where3;
+//}
+$thn = date('Y');
+if($_POST['kategori']) $kat = $_POST['kategori']; else $kat = 10;
+if($_POST['tahun']) {
+    $tgl = $_POST['tahun'];
+}else {
+    $tgl = $thn;
+}
+//if($_POST['penyelenggara'])
+//  $p = $_POST['penyelenggara'];
+$db->where('kategori='.$kat.' and Year(tgl)='.$tgl.' order by id desc limit 0,20 ');
+        $db->get('agenda');
+        $agenda = $db->get_fetch();
+        $db->where(1);
+        $db->get('agenda_kategori');
+        $kategori_agenda = $db->get_fetch();
+//$db->where('1');
+//$db->get('2008_satker');
+//$sat = $db->get_fetch();
+?>
 <!-- bagian tengah -->
 	<div id="right">
 	<!-- area isi-->
 		<div class="border_area">
 		<form action="" method="post" name="frm" style="margin-left: 20px; margin-top: 10px; margin-bottom:5px;">
-									Pilihan Agenda <select name="tanggal">
+									Pilihan Agenda <select name="kategori">                                                                            
                                                                             <?php foreach ($kategori_agenda as $k){?>
                                                                             <option value="<?php echo $k['id']?>"><?php echo $k['nama']?></option>
                                                                             <?php }?>
 									</select> &nbsp &nbsp &nbsp
-									Bulan <select name="bulan">
-                                                                            <option value="1">Januari</option><option value="2">Februari</option><option value="3">Maret</option><option value="4">April</option><option value="5">Mei</option><option value="6">Juni</option><option value="7">Juli</option><option value="8">Agustus</option><option value="9">September</option><option value="10">Oktober</option><option value="11">November</option><option value="12">Desember</option></select> &nbsp &nbsp &nbsp
 									Tahun <select name="tahun">
-                                                                            <option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option></select> &nbsp
-									<input name="Submit" onclick="" class="butinput" value="Tampilkan Agenda" type="button" />
+                                                                            <option value="">----</option>
+                                                                            <option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option></select> &nbsp                                                                           
+                                                                                                                            
+									<input name="Submit" onclick="" class="butinput" value="Tampilkan Agenda" type="submit" />
 									<input name="txtSecID" value="" type="hidden">
 								</form>
 

@@ -6,20 +6,20 @@
 		      <div><p class="area_judul"><span> Sitemap </span></p>
 			  </div><br><br>
 				<h3 style="">Top Menu</h3>
-					<ul style="margin-left: 30px; margin-bottom: 10px; text-decoration: none;">
-						<li style=><a href="#" title="Beranda"> </a>Beranda</li>
+                                <ul style="margin-left: 30px; margin-bottom: 10px;">
+						<li><a href="#" title="Beranda"> </a>Beranda</li>
 						<li ><a href="portal/home/tentangbatan.html" title="Tentang BATAN"> </a>Tentang BATAN</li>
 							<ul><li><a href="portal/home/profil.html" title="Profil BATAN">Profil BATAN</li>
 							<li><a href="portal/home/sejarah.html" title="Sejarah BATAN">Sejarah BATAN</li>
 							<li><a href="portal/home/strukturorganisasi.html" title="Struktur Organisasi">Struktur Organisasi</li>
 							<li><a href="portal/home/kerjasama.html" title="Kerjasama">Kerjasama</li></ul>
-						<li ><a href="#" title="Agenda"></a>Agenda</li>
+						<li ><a href="portal/home/agenda.html" title="Agenda"></a>Agenda</li>
 							<ul><li><a href="portal/home/programtahunan.html" title="Program Tahunan">Program Tahunan</li>
 							<li><a href="portal/home/programpelatihan.html" title="Program Pelatihan">Program Pelatihan</li>
 							<li><a href="portal/home/programcoaching.html" title="Program Coaching">Program Coaching</li></ul>
-						<li ><a href="#" title="Gallery"> </a>Galery</li>
-						<ul><li><a href="#" title="Foto">Foto</li>
-							<li><a href="#" title="Video">Video</li></ul>
+						<li ><a href="portal/home/galeri.html" title="Gallery"> </a>Galery</li>
+						<ul><li><a href="portal/home/galeripoto.html" title="Foto">Foto</li>
+							<li><a href="portal/home/galerivideo.html" title="Video">Video</li></ul>
 						<li ><a href="#" title="Webmail"> </a>Webmail</li>
 						<li ><a href="portal/home/kontak.html" title="Kontak"></a>Kontak</li>
 					</ul>
