@@ -50,11 +50,12 @@
 </script>
                                 </div>
                                  <div id="englishver">
-                                        <img src="images/bendera_inggris.jpg" alt=""/>
-                                        <a href=""><font color="fff7df">English Version</font></a>
+                                        <img src="images/bendera_inggris.jpg" alt="" style="margin-right:0px;"/>
+                                        <a href=""><font color="fff7df" style="margin-right:-0px;">English Version</font></a>
                                     </div>
                                 <!--end of search&english ver-->
                             </div> <!--end of header-->
+
                             <!--background putih-->
                             <div id="shape_putih">
                                 <div>
@@ -71,10 +72,8 @@
                                         </li>
                                         <li><a href="http://www.webmail.batan.go.id"><b>Webmail</b></a>
                                         </li>
-                                        <li><a href="portal/home/kontak.html" onclick="sub('kontak'); return false"><b>Kontak</b></a>
-
+                                        <li><a href="kontak.html"><b>Kontak</b></a>
                                         </li>
-
                                     </ul>
                                 </div>
                                 <div class="clear"></div>
@@ -85,13 +84,10 @@
                                     <a href="portal/home/kerjasama.html">Kerjasama</a>
                                 </div>
                                 <div id="sub_agenda" class="sub_menu">
-                                    <a href="portal/home/programtahunan.html">Program Tahunan</a>|<a href="portal/home/programpelatihan.html">Program Pelatihan</a>|<a href="portal/home/programcoaching.html">Program Coaching</a>
+                                    <a href="#">Program Tahunan</a>|<a href="#">Program Pelatihan</a>|<a href="#">Program Coaching</a>
                                 </div>
                                 <div id="sub_galeri" class="sub_menu">
                                     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/galerifoto.html">Foto</a>|<a href="portal/home/galerivideo.html">Video</a>
-                                </div>
-                                <div id="sub_kontak" class="sub_menu">
-                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/home/kontak.html">Lokasi</a>|<a href="portal/home/bukutamu.html">Buku Tamu</a>
                                 </div>
 
                                 <div id="submenu"> <!--marquee&submenu-->
@@ -99,8 +95,10 @@
                                         <marquee scrollamount="4" width="100%">Selamat Datang di Website Resmi Badan Tenaga Nuklir Nasional (BATAN)</marquee></font>
                                 </div>
 
-                                
-
+                                <!--navigation history -->
+	<div id="navhistory">
+		<?php echo $navhistory ?>
+	</div>
                                 <!--Kolom Kiri-->
                                 <div id="left">
                                     <!--kategori-->
@@ -113,17 +111,17 @@
                                                     </li>
                                                     <li><a href="portal/home/newsletter.html">ANSN Newsletter</a>
                                                     </li>
-                                                   <!-- <li><a href="#">Index ANSN</a></li> -->
+                                                    <li><a href="#">Index ANSN</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="http://www.batan.go.id/datalingkungan/">Data Lingkungan Serpong</a></li>
+                                            <li><a href="portal/home/datalingkungan.html">Data Lingkungan Serpong</a></li>
                                             <li><a href="portal/home/download.html">Download</a></li>
                                             <li><a href="portal/home/litbangyasa.html">Hasil Litbangyasa</a>
                                                 <ul class="sub-level">
                                                     <li><a href="portal/home/litbangenergi.html">Energi</a></li>
                                                     <li><a href="portal/home/litbangpertanian.html">Pertanian & Peternakan </a></li>
                                                     <li><a href="portal/home/litbangkesehatan.html">Kesehatan & Obat-obatan </a></li>
-                                                    <li><a href="portal/home/litbangtik.html">Teknologi Infomasi &amp Komunikasi </a></li>
+                                                    <li><a href="portal/home/tik.html">Teknologi Infomasi &amp Komunikasi </a></li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -132,9 +130,9 @@
                                                     <li><a href="http://www.chemicalelements.com/">Chemical Elements</a></li>
                                                     <li><a href="http://www.batan.go.id/ensiklopedi/">Ensiklopedia</a></li>
                                                     <li><a href="http://www.batan.go.id/Kamus/">Glosarium</a></li>
-                                                    <li><a href="portal/home/e-jurnal.html">Jurnal Elektronik</a></li>
-                                                    <li><a href="http://digilib.batan.go.id/">Perpustakaan Digital</a></li>
-                                                    <li><a href="portal/home/referensi.html">Referensi</a></li>
+                                                    <li><a href="e-jurnal.html">Jurnal Elektronik</a></li>
+                                                    <li><a href="http://www.digilib.batan.go.id">Perpustakaan Digital</a></li>
+                                                    <li><a href="referensi.html">Referensi</a></li>
                                                     <li><a href="http://bandung.batan.go.id/ptnbr/aplikasi/periodic_table/TableElemen.html">Tabel Periodik</a></li>
                                                 </ul>
                                             </li>
@@ -145,7 +143,7 @@
                                                     <li><a href="portal/home/kunjungan.html">Kunjungan</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="http://www.batan.go.id/prsg/index.php?option=com_content&task=view&id=45&Itemid=76">Jadwal Operasi Reaktor</a></li>
+                                            <li><a href="portal/home/jadwalreaktor.html">Jadwal Operasi Reaktor</a></li>
                                             <li>
                                                 <a href="portal/home/oss.html">Open Source Software</a>
                                                 <ul class="sub-level">
@@ -193,9 +191,9 @@
                                     <!--BERITA NUKLIR Terkini-->
                                     <div id="kategori">Berita Nuklir Terkini</div>
                                     <div class="berita">
-                                        <ul class="top-level" >
+                                        <ul class="top-level">
                                             <?php foreach ($list_berita_nuklir as $berita) { ?>
-                                                <li><a href="portal/berita/<?php echo $berita['id_berita']?>.html"><?php echo substr($berita['judul'], 0, 22) ?>...</a></li>
+                                                <li><a href="berita_nuklir_terkini.html"><?php echo substr($berita['judul'], 0, 27) ?>...</a></li>
                                             <?php } ?>
                                         </ul>
                                         <ul class="more">
@@ -207,9 +205,9 @@
                                     <!--Artikel-->
                                     <div id="kategori">Artikel</div>
                                     <div class="berita">
-                                        <ul class="top-level" style="padding: 0px;">
+                                        <ul class="top-level">
                                             <?php foreach ($list_artikel as $pie) { ?>
-                                                <li><a href="portal/artikel/<?php echo $pie['id'] ?>.html"><?php echo substr($pie['judul'], 0, 22) ?>...</a></li>
+                                                <li><a href="portal/artikel/<?php echo $pie['id'] ?>.html"><?php echo substr($pie['judul'], 0, 25) ?>...</a></li>
                                             <?php } ?>
                                         </ul>
                                         <ul class="more">
@@ -242,7 +240,7 @@
                                                                                     <ul class="top-level">
                                                                                         <table>
                                                                                             <tr><td><a href="http://www.facebook.com/pages/Badan-Tenaga-Nuklir-Nasional-BATAN/222822377768877"><img style="margin-left:30px; margin-top:5px;" src="images/fb_icon3.png" alt="" title="Facebook"/></a></td>
-                                                                                                <td><a href="http://twitter.com/#!/Batan_RI"><img style="margin-left:0px; margin-top:5px;" src="images/twitter_icon.png" alt="" title="Twitter"/></a></td>
+                                                                                                <td><a href="#"><img style="margin-left:0px; margin-top:5px;" src="images/twitter_icon.png" alt="" title="Twitter"/></a></td>
                                                                                         </table>
                                                                                     </ul><br /><br />
                                                                                 </div>
@@ -257,9 +255,8 @@
 
                                                                                 <!-- bagian tengah-->
                                                                                 <div id="right">
-                                                                                    <div id="cse" style="width:98%;"></div>
-
-                                                                                <?php include $view_content ?></div> <!-- end of right -->
+                                            <div id="cse" style="width:100%;"></div>
+                                            <?php include $view_content ?></div> <!-- end of right -->
                                                                                 <div class="clear">
                                                                                 </div>
                                                                                 <!--footer-->
@@ -267,7 +264,7 @@
                                                                                     <p align="center" style="margin-left:70px; margin-top: -5px;"> <font size=2.5>Kantor Pusat BATAN</br>
 		Jl. Kuningan Barat, Mampang Prapatan, Jakarta 12710</br></p>
                                                                                     &nbsp &nbsp &nbsp <font size=1>Copyright (c) 2011 | Website created by BATAN RANGER</font>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Telp.(021) 525-1109, Fax.(021) 525-1110, email: humas@batan.go.id
-                                                                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/home/faq.html"><font size=2 color= 83df4d>Faq</font><a> | <a href="portal/home/sitemap.html"><font size=2 color= 83df4d>Sitemap</font><a> | <a href="introbatan.swf"><font size=2 color= 83df4d>Credit</font><a></font></p>
+                                                                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/home/faq.html"><font size=2 color= 83df4d>Faq</font><a> | <a href=""><font size=2 color= 83df4d>Sitemap</font><a> | <a href="introbatan.swf"><font size=2 color= 83df4d>Credit</font><a></font></p>
                                                                                                             </div>
                                                                                                             <!-- end of footer-->
                                                                                                             </div>

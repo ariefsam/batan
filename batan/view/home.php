@@ -67,7 +67,7 @@
                                         <li><a href="portal/home/tentangbatan.html" onclick="sub('ttg_batan'); return false"><b>Tentang BATAN</b></a>
 
                                         </li>
-                                        <li><a href="portal/home/agenda.html" onclick="sub('agenda'); return false"><b>Agenda</b></a>
+                                        <li><a href="portal/home/agenda.html"<b>Agenda</b></a>
                                         </li>
                                         <li><a href="portal/home/galeri.html" onclick="sub('galeri'); return false"><b>Galeri</b></a>
 
@@ -87,9 +87,7 @@
                                     <a href="portal/home/profil.html">Profil BATAN</a>|<a href="portal/home/sejarah.html">Sejarah</a>|<a href="portal/home/strukturorganisasi.html">Struktur Organisasi</a>|
                                     <a href="portal/home/kerjasama.html">Kerjasama</a>
                                 </div>
-                                <div id="sub_agenda" class="sub_menu">
-                                    <a href="portal/home/programtahunan.html">Program Tahunan</a>|<a href="portal/home/programpelatihan.html">Program Pelatihan</a>|<a href="portal/home/programcoaching.html">Program Coaching</a>
-                                </div>
+                                
                                 <div id="sub_galeri" class="sub_menu">
                                     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/galerifoto.html">Foto</a>|<a href="portal/home/galerivideo.html">Video</a>
                                 </div>

@@ -78,30 +78,30 @@ switch ($param[1])
         require "view/home2.php";
         break;
 
-     case "programtahunan":
-        $navhistory = '<a href="" class="text" ><font color=#3b33e7 size=2px>Beranda</font></a><font color=#297b0a size=2px> > </font>
-		<a href="portal/home/agenda.html" class="text" ><font color=#3b33e7 size=2px>Agenda</font></a><font color=#297b0a size=2px> > </font>
-                <font color=#535050 size=2px>Program Tahunan</font>';
-        $view_content = "view/programtahunan.php";
-        
-        require "view/home2.php";
-        break;
+//     case "programtahunan":
+//        $navhistory = '<a href="" class="text" ><font color=#3b33e7 size=2px>Beranda</font></a><font color=#297b0a size=2px> > </font>
+//		<a href="portal/home/agenda.html" class="text" ><font color=#3b33e7 size=2px>Agenda</font></a><font color=#297b0a size=2px> > </font>
+//                <font color=#535050 size=2px>Program Tahunan</font>';
+//        $view_content = "view/programtahunan.php";
+//
+//        require "view/home2.php";
+//        break;
 
-    case "programpelatihan":
-        $navhistory = '<a href="" class="text" ><font color=#3b33e7 size=2px>Beranda</font></a><font color=#297b0a size=2px> > </font>
-		<a href="portal/home/agenda.html" class="text" ><font color=#3b33e7 size=2px>Agenda</font></a><font color=#297b0a size=2px> > </font>
-                <font color=#535050 size=2px>Program Pelatihan</font>';
-        $view_content = "view/programpelatihan.php";
-        require "view/home2.php";
-        break;
-
-    case "programcoaching":
-        $navhistory = '<a href="" class="text" ><font color=#3b33e7 size=2px>Beranda</font></a><font color=#297b0a size=2px> > </font>
-		<a href="portal/home/agenda.html" class="text" ><font color=#3b33e7 size=2px>Agenda</font></a><font color=#297b0a size=2px> > </font>
-                <font color=#535050 size=2px>Program Coaching</font>';
-        $view_content = "view/programcoaching.php";
-        require "view/home2.php";
-        break;
+//    case "programpelatihan":
+//        $navhistory = '<a href="" class="text" ><font color=#3b33e7 size=2px>Beranda</font></a><font color=#297b0a size=2px> > </font>
+//		<a href="portal/home/agenda.html" class="text" ><font color=#3b33e7 size=2px>Agenda</font></a><font color=#297b0a size=2px> > </font>
+//                <font color=#535050 size=2px>Program Pelatihan</font>';
+//        $view_content = "view/programpelatihan.php";
+//        require "view/home2.php";
+//        break;
+//
+//    case "programcoaching":
+//        $navhistory = '<a href="" class="text" ><font color=#3b33e7 size=2px>Beranda</font></a><font color=#297b0a size=2px> > </font>
+//		<a href="portal/home/agenda.html" class="text" ><font color=#3b33e7 size=2px>Agenda</font></a><font color=#297b0a size=2px> > </font>
+//                <font color=#535050 size=2px>Program Coaching</font>';
+//        $view_content = "view/programcoaching.php";
+//        require "view/home2.php";
+//        break;
 
 
      case "kontak":
