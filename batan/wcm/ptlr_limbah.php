@@ -2,11 +2,35 @@
 require 'konfigurasi.php';
 require 'lib/date.php';
 require 'lib/currency.php';
+$db = db::singleton();
+
 $nama_menu = "PTLR - Limbah";
 include ("cek.php");
 $id=$_GET['id'];
 include ("menukiri.php");
 $tahun_ini = date('Y');
+
+if($_GET['s']) $start=$_GET['s'];
+else $start=0;
+
+$where = 'id_order='.$id.' order by id_limbah';
+
+$db->where($where);
+$db->get('limbah',$start,1);
+$d = $db->get_fetch();
+include 'lib/pagination.php';
+
+$config['per_page'] = 1;
+$config['start'] = $start;
+$config['base_url']="?id=" . $id . "&";
+$config['variable']='s';
+
+$db->where($where);
+$db->get('limbah');
+$config['total_rows']=$db->num_rows();
+
+$page = new pagination();
+$page->initialize($config);
 ?>
 <script type="text/javascript">
             function edit(i){
@@ -40,27 +64,24 @@ $tahun_ini = date('Y');
 <script type="text/javascript" src="ui/jquery.js"></script>
 <div id="page">
     <div id="content">
-        <?php
-//        $menu_atas = '<a href="?aksi=add" class="comments">Add</a>&nbsp;&nbsp;&nbsp;<font color=white>|</font>&nbsp;&nbsp;&nbsp;<a href="?aksi=list" class="comments">Lists</a>&nbsp;&nbsp;&nbsp;<font color=white>|</font>&nbsp;&nbsp;&nbsp;<a href="?aksi=list_online" class="comments">List Online</a>';
-//        include ("menu.php")?>
-
         <div class="post"><div class="ct"><div class="l"><div class="r"></div></div></div>
         <h2 class="title">Manajemen Order Limbah <?php echo $tahun_ini?></h2>
             <div class="entry">
+                <a href="ptlr_orderlimbah.php"><< kembali</a>
                 <div style="margin-left: 400px; padding: 1 1 1 1"><a href="pdf.php?id=<?php echo $id?>" style="text-decoration: underline">Cetak pdf</a><img src="images/pdf.png" /></div>
                 <?php       
-                $db->where('id_order='.$id.' order by id_limbah' );
-                $db->get("limbah");
-                $d = $db->get_fetch();
-                $i=1;
-                foreach ($d as $data){
-                echo "Data limbah ke-".$i++;
+                $page->show();
+                $i=$start+1;
+                foreach ($d as $data){                
                 ?>
                 <div class="tedy">
                 <table>
                     <thead>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td colspan="2" style="color: #008000" align="center"><b>Data Limbah ke-<?php echo $i?></b></td>
+                        </tr>
                         <tr>
                             <td><b>Tanggal</b></td>
                             <td><?php echo from_date($data['tgl_order'])?></td>
@@ -112,8 +133,8 @@ $tahun_ini = date('Y');
                         <tr>
                             <td style="vertical-align: top">&nbsp;d. Radioaktivitas</td>
                             <td>
-                                - Volumik (Bq/m3, Ci/m3)/Tgl :&nbsp;<?php echo $data['volumik_radioaktivitas']?><br /><br />
-                                - Total (Bq, Ci)/Tgl :&nbsp;<?php echo $data['total_radioaktivitas']?><br /><br />
+                                - Volumik/Tgl :&nbsp;<?php echo $data['volumik_radioaktivitas']?><br /><br />
+                                - Total/Tgl :&nbsp;<?php echo $data['total_radioaktivitas']?><br /><br />
                                 - Lain-lain : <?php echo $data['lain2_radioaktivitas']?>
                             </td>
                         </tr>
@@ -121,8 +142,8 @@ $tahun_ini = date('Y');
                             <td style="vertical-align: top">&nbsp;e. Dosis Paparan Limbah</td>
                             <td>
                                 - Tanggal Pengukuran :&nbsp;<?php echo from_date($data['tgl_pengukuran'])?><br /><br />
-                                - Permukaan (&mu; Sv/j, mRem/J) :&nbsp;<?php echo $data['permukaan']?><br /><br />
-                                - Jarak 1 m (&mu; Sv/j, mRem/J) : <?php echo $data['jarak_1_m']?>
+                                - Permukaan :&nbsp;<?php echo $data['permukaan']?><br /><br />
+                                - Jarak 1 m : <?php echo $data['jarak_1_m']?>
                             </td>
                         </tr>
                         <tr>

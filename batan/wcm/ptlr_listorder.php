@@ -6,15 +6,16 @@ $db = db::singleton();
 if($_GET['s']) $start=$_GET['s'];
 else $start=0;
 
+$alamat;
 $where = '1 order by status asc';
 if($_GET['find']) $where = "instansi like '%" . $_GET['find'] . "%' ORDER BY status";
 
 $db->where($where);
-$db->get('order_limbah',$start,10);
+$db->get('order_limbah',$start,20);
 $data = $db->get_fetch();
 include 'lib/pagination.php';
 
-$config['per_page'] = 10;
+$config['per_page'] = 20;
 $config['start'] = $start;
 $config['base_url']="?find=" . $_GET['find'] . "&";
 $config['variable']='s';
@@ -97,7 +98,7 @@ $page->initialize($config);
     <thead>
         <tr>
             <td>No</td>
-            <td>Institusi</td>
+            <td>Instansi</td>
             <td>Alamat</td>
             <td>Email/Telp./Fax</td>
             <td>Tanggal Order</td>
@@ -117,12 +118,13 @@ $page->initialize($config);
                 $d['instansi'] = ucwords(strtolower($d['instansi']));
                 $d['instansi'] = str_replace( $search , '<strong>'.$search.'</strong>' , $d['instansi'] );
             }
+            $alamat = $d['gedung']."<br />".$d['jalan']."<br />"."  ".$d['kota']." ".$d['kodepos'].", Indonesia";
             ?>
 
         <tr id="data<?php echo $d['id_order']?>">
             <td><?php echo $i?></td>
             <td><?php echo $d['instansi']?></td>
-            <td><?php echo $d['alamat']?></td>
+            <td><?php echo $alamat?></td>
             <td>
                 <?php echo $d['email']?><br />
                 <?php echo $d['telp']?><br />
@@ -142,7 +144,11 @@ $page->initialize($config);
             <input type="hidden" name="no" value="<?php echo $i?>" />
             <td><?php echo $i?></td>
             <td><input type="text" name="instansi" value="<?php echo $d['instansi']?>" /></td>
-            <td><textarea name="alamat" rows="5" cols="20"><?php echo $d['alamat']?> </textarea></td>
+            <td>
+                <input type="text" name="gedung" value="<?php echo $d['gedung']?>"><br />
+                <input type="text" name="jalan" value="<?php echo $d['jalan']?>" size="25"><br />
+                <input type="text" name="kota" value="<?php echo $d['kota']?>" size="13px"><input type="text" name="kodepos" size="5" value="<?php echo $d['kodepos']?>">
+            </td>
             <td><input type="text" name="email" value="<?php echo $d['email']?>" /><br />
                 <input type="text" name="telp" value="<?php echo $d['telp']?>"/><br />
                 <input type="text" name="fax" value="<?php echo $d['fax']?>"/>
