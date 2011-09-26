@@ -260,11 +260,11 @@
                                                                                 <div class="clear">
                                                                                 </div>
                                                                                 <!--footer-->
-                                                                                <div class="footer">
+                                                                               <div class="footer">
                                                                                     <p align="center" style="margin-left:70px; margin-top: -5px;"> <font size=2.5>Kantor Pusat BATAN</br>
 		Jl. Kuningan Barat, Mampang Prapatan, Jakarta 12710</br></p>
-                                                                                    &nbsp &nbsp &nbsp <font size=1>Copyright (c) 2011 | Website created by BATAN RANGER</font>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Telp.(021) 525-1109, Fax.(021) 525-1110, email: humas@batan.go.id
-                                                                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/home/faq.html"><font size=2 color= 83df4d>Faq</font><a> | <a href=""><font size=2 color= 83df4d>Sitemap</font><a> | <a href="introbatan.swf"><font size=2 color= 83df4d>Credit</font><a></font></p>
+                                                                                    &nbsp &nbsp &nbsp <font size=1>Website created under cooperation with <a href="http://cs.ilkom.ipb.ac.id" style="color:#ffffff">Ilmu Komputer IPB</a></font> &nbsp &nbsp Telp.(021) 525-1109, Fax.(021) 525-1110, email: humas@batan.go.id
+                                                                                    &nbsp  <font size=1>Copyright (c) 2011 </font> <a href="portal/home/faq.html"><font size=2pt color= ffff>Faq</font></a> | <a href="portal/home/sitemap.html"><font size=2pt color= ffff>Sitemap</font></a> | <a href="introbatan.swf"><font size=2pt color= ffff>Credit</font</a></font></p>
                                                                                                             </div>
                                                                                                             <!-- end of footer-->
                                                                                                             </div>
