@@ -6,6 +6,7 @@ require 'lib/date.php';
 $db = db::singleton();
 $sidebar = 'sidebar_limbah.php';
 
+
 switch ($sub){
     case "daftar":
         $view_content = 'view/limbah/form.php';
@@ -38,11 +39,30 @@ switch ($sub){
                 "From: WCM BATAN <wcm@batan.go.id>\n" .
                 "MIME-Version: 1.0\n" .
                 "Content-type: text/html; charset=iso-8859-1");
+        mail($data["email"], 'Kode Registrasi',
+                '<html>
+                    <body>
+                        <h3>Yth '.$data["instansi"].'</h3>
+                        <p>Permintaan pengolahan limbah dari Anda sudah kami terima, silakan gunakan kode registrasi di bawah ini untuk mengecek status pengolahan limbah Anda</p>
+                        <p>Kode registrasi : '.$data["kode"].'</p>
+                        <p>Terima Kasih</p>
+                    </body>
+                </html>',
+                "\n" .
+                "From: WCM BATAN <wcm@batan.go.id>\n" .
+                "MIME-Version: 1.0\n" .
+                "Content-type: text/html; charset=iso-8859-1");
         session_destroy();
-        header('Location: index.php?l=limbah&s=daftar');
+        header('Location: index.php?l=limbah&s=konfirm');
         break;
-    case "p_limbah":
+    case "konfirm":
+        $view_content = 'view/limbah/konfirm.php';
+        break;
+    case "p_limbah":        
         $view_content = 'view/limbah/p_limbah.php';
+        break;
+    case "cek":
+        $view_content = 'view/limbah/cek.php';
         break;
     default :
         $view_content = 'view/limbah/depan.php';
