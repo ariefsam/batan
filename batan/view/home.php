@@ -67,7 +67,7 @@
                                         <li><a href="portal/home/tentangbatan.html" onclick="sub('ttg_batan'); return false"><b>Tentang BATAN</b></a>
 
                                         </li>
-                                        <li><a href="portal/home/agenda.html"<b>Agenda</b></a>
+                                        <li><a href="portal/home/agenda.html"><b>Agenda</b></a>
                                         </li>
                                         <li><a href="portal/home/galeri.html" onclick="sub('galeri'); return false"><b>Galeri</b></a>
 
