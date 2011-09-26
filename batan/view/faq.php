@@ -5,19 +5,7 @@
 			<p class="area_text">
 			<b>Ini adalah kolom dimana berisi jawaban terhadap pertanyaan yang umum diajukan ke BATAN.</b>
 			</center><p class=garis>&nbsp;</p><p class=text_judul>PERTANYAAN UMUM</p><br>
-      <ul>
-      <li style="margin-left:30px;"><A HREF=#Apasih_BATAN_itu>Apasih BATAN itu?</a></li>
-      <li style="margin-left:30px;"><A HREF=#Apa_yang_sudah_dikembangkan_oleh_BATAN>Apa yang sudah dikembangkan oleh BATAN?</a></li>
-      <li style="margin-left:30px;"><A HREF=#Apakah_BATAN_punya_cabang_di_daerah>Apakah BATAN punya cabang di daerah?</a></li>
-      <li style="margin-left:30px;"><A HREF=#Apakah_BATAN_sama_dengan_BAPETEN>Apakah BATAN sama dengan BAPETEN?</a></li>
-      <li style="margin-left:30px;"><A HREF=#Apakah_hubungan_antara_BATAN_dan_PLTN>Apakah ada hubungan antara BATAN dan PLTN?</a></li>
-      <li style="margin-left:30px;"><A HREF=#Apakah_BATAN_mengembangkan_senjata_nuklir>Apakah BATAN mengembangkan senjata nuklir?</a></li>
-      <li style="margin-left:30px;">Apakah Indonesia sudah menguasai teknologi nuklir?</li>
-      <li style="margin-left:30px;">Apakah Indonesia punya reaktor nuklir?</li>
-      <li style="margin-left:30px;">Bagaimana menangani limbah radioaktif atau nuklir?</li>
-      <li style="margin-left:30px;">Apakah nuklir bisa menghancurkan manusia?</li>
-      <li style="margin-left:30px;"><A HREF=#Kenapa_kita_butuh_PLTN>Kenapa kita butuh PLTN?</a></li>
-      </ul><br><br>
+      
       <A NAME=Apasih_BATAN_itu style="margin-left:15px;">
       <b>Apasih BATAN itu?</b></a><br>
       <blockquote style="margin-left:15px;">BATAN adalah lembaga pemerintah non departemen yang melakukan penilitian dan
