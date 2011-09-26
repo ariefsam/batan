@@ -72,7 +72,7 @@
                                         <li><a href="portal/home/galeri.html" onclick="sub('galeri'); return false"><b>Galeri</b></a>
 
                                         </li>
-                                        <li><a href="http://www.webmail.batan.go.id"><b>Webmail</b></a>
+                                        <li><a href="http://webmail.batan.go.id"><b>Webmail</b></a>
                                         </li>
                                         <li><a href="portal/home/kontak.html" onclick="sub('kontak'); return false"><b>Kontak</b></a>
 
