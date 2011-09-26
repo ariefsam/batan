@@ -65,14 +65,15 @@
                                         <li><a href="portal/home/tentangbatan.html" onclick="sub('ttg_batan'); return false"><b>Tentang BATAN</b></a>
 
                                         </li>
-                                        <li><a href="portal/home/agenda.html" onclick="sub('agenda'); return false"><b>Agenda</b></a>
+                                        <li><a href="portal/home/agenda.html"><b>Agenda</b></a>
                                         </li>
                                         <li><a href="portal/home/galeri.html" onclick="sub('galeri'); return false"><b>Galeri</b></a>
 
                                         </li>
                                         <li><a href="http://webmail.batan.go.id"><b>Webmail</b></a>
                                         </li>
-                                        <li><a href="portal/home/kontak.html"><b>Kontak</b></a>
+                                        <li><a href="portal/home/kontak.html" onclick="sub('kontak'); return false"><b>Kontak</b></a>
+
                                         </li>
                                     </ul>
                                 </div>
@@ -83,11 +84,12 @@
                                     <a href="portal/home/profil.html">Profil BATAN</a>|<a href="portal/home/sejarah.html">Sejarah</a>|<a href="portal/home/strukturorganisasi.html">Struktur Organisasi</a>|
                                     <a href="portal/home/kerjasama.html">Kerjasama</a>
                                 </div>
-                                <div id="sub_agenda" class="sub_menu">
-                                    <a href="#">Program Tahunan</a>|<a href="#">Program Pelatihan</a>|<a href="#">Program Coaching</a>
-                                </div>
+                                
                                 <div id="sub_galeri" class="sub_menu">
                                     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/galerifoto.html">Foto</a>|<a href="portal/home/galerivideo.html">Video</a>
+                                </div>
+                                 <div id="sub_kontak" class="sub_menu">
+                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/home/kontak.html">Lokasi</a>|<a href="portal/home/bukutamu.html">Buku Tamu</a>
                                 </div>
 
                                 <div id="submenu"> <!--marquee&submenu-->
@@ -193,7 +195,7 @@
                                     <div class="berita">
                                         <ul class="top-level">
                                             <?php foreach ($list_berita_nuklir as $berita) { ?>
-                                                <li><a href="berita_nuklir_terkini.html"><?php echo substr($berita['judul'], 0, 27) ?>...</a></li>
+                                                <li><a href="portal/berita/"<?php echo $berita['id_berita']?>.html"><?php echo substr($berita['judul'], 0, 27) ?>...</a></li>
                                             <?php } ?>
                                         </ul>
                                         <ul class="more">
