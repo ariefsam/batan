@@ -195,7 +195,7 @@
                                     <div class="berita">
                                         <ul class="top-level">
                                             <?php foreach ($list_berita_nuklir as $berita) { ?>
-                                                <li><a href="portal/berita/"<?php echo $berita['id_berita']?>.html"><?php echo substr($berita['judul'], 0, 27) ?>...</a></li>
+                                                <li><a href="portal/berita/<?php echo $berita['id_berita']?>.html"><?php echo substr($berita['judul'], 0, 27) ?>...</a></li>
                                             <?php } ?>
                                         </ul>
                                         <ul class="more">
