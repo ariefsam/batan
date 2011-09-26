@@ -72,7 +72,7 @@
                                         </li>
                                         <li><a href="http://www.webmail.batan.go.id"><b>Webmail</b></a>
                                         </li>
-                                        <li><a href="kontak.html"><b>Kontak</b></a>
+                                        <li><a href="portal/home/kontak.html"><b>Kontak</b></a>
                                         </li>
                                     </ul>
                                 </div>

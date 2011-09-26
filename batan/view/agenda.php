@@ -2,6 +2,7 @@
     table td {
         vertical-align: top;
         padding: 5px;
+        alignment: left;
     }
 </style>
 <?php
