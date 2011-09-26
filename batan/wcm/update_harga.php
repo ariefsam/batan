@@ -10,11 +10,10 @@ if($_POST['harga'])
     );
     $db->where("id_limbah=" . $_POST['id_limbah']);
     $a = $db->update('limbah', $data);
-
+$db->where("id_limbah=" . $_POST['id_limbah']);
 $db->get('limbah');
 $data= $db->get_fetch();
 $data=$data[0];
-
 
 ?>
 <td><b>Harga</b></td>
