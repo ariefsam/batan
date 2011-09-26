@@ -250,8 +250,18 @@
 
                                                                                 <!--Traffic Visitor-->
                                                                                 <div id="kategori">Traffic Visitor</div>
-                                                                                <div class="berita" style="height:90px; ">
-                                                                                </div>
+<div class="berita" style="height:90px; ">
+<div class="top-level" style="margin-left:35px; margin-top:-15px;" >
+<!-- Histats.com  START  (standard)-->
+<script type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
+	<a href="http://www.histats.com" target="_blank" title="histats" ><script  type="text/javascript" >
+	try {Histats.start(1,1586940,4,438,112,75,"00011110");
+	Histats.track_hits();} catch(err){};
+</script></a>
+<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?1586940&101" alt="histats" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</div>
+       </div><!--end of Traffic Visitor-->
                                                                                 <!--end of Traffic Visitor-->
                                                                                 </div> <!-- end of left -->
 
