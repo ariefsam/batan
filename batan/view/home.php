@@ -284,10 +284,20 @@
                                                                                 <!-- end of Follow us-->
 
                                                                                 <!--Traffic Visitor-->
-                                                                                <div id="kategori">Traffic Visitor</div>
-                                                                                <div class="berita" style="height:90px; ">
-                                                                                </div>
-                                                                                <!--end of Traffic Visitor-->
+                                                                             
+<div id="kategori">Traffic Visitor</div>
+<div class="berita" style="height:90px; ">
+<div class="top-level" style="margin-left:35px; margin-top:-15px;" >
+<!-- Histats.com  START  (standard)-->
+<script type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
+	<a href="http://www.histats.com" target="_blank" title="histats" ><script  type="text/javascript" >
+	try {Histats.start(1,1586940,4,438,112,75,"00011110");
+	Histats.track_hits();} catch(err){};
+</script></a>
+<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?1586940&101" alt="histats" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</div>
+       </div><!--end of Traffic Visitor-->
                                                                                 </div> <!-- end of left -->
 
                                                                                 <!-- bagian tengah-->
@@ -301,8 +311,8 @@
                                                                                 <div class="footer">
                                                                                     <p align="center" style="margin-left:70px; margin-top: -5px;"> <font size=2.5>Kantor Pusat BATAN</br>
 		Jl. Kuningan Barat, Mampang Prapatan, Jakarta 12710</br></p>
-                                                                                    &nbsp &nbsp &nbsp <font size=1>Copyright (c) 2011 | Website created by BATAN RANGER</font>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Telp.(021) 525-1109, Fax.(021) 525-1110, email: humas@batan.go.id
-                                                                                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<a href="portal/home/faq.html"><font size=2 color= 83df4d>Faq</font><a> | <a href="portal/home/sitemap.html"><font size=2 color= 83df4d>Sitemap</font><a> | <a href="introbatan.swf"><font size=2 color= 83df4d>Credit</font><a></font></p>
+                                                                                    &nbsp &nbsp &nbsp <font size=1>Website created under cooperation with <a href="http://cs.ilkom.ipb.ac.id" style="color:#ffffff">Ilmu Komputer IPB</a></font> &nbsp &nbsp &nbsp Telp.(021) 525-1109, Fax.(021) 525-1110, email: humas@batan.go.id
+                                                                                    &nbsp &nbsp <font size=1>Copyright (c) 2011 | </font> <a href="portal/home/faq.html"><font size=1 color= 83df4d>Faq</font><a> | <a href="portal/home/sitemap.html"><font size=1 color= 83df4d>Sitemap</font><a> | <a href="introbatan.swf"><font size=1 color= 83df4d>Credit</font><a></font></p>
                                                                                                             </div>
                                                                                                             <!-- end of footer-->
                                                                                                             </div>
