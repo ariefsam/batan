@@ -12,15 +12,18 @@ if($_POST['nama']){
                                                 $_POST["recaptcha_response_field"]);
 
                 if ($resp->is_valid) {
+                        $msg = 'Komentar berhasil dikirim';
                         $data = array(
                             "nama"  => $_POST['nama'],
                             "komentar"   => $_POST['isi'],
                             "email" => $_POST['email'],
-                            "website" => $_POST['website'],
+                           // "website" => $_POST['website'],
                             "id_berita" => $_POST['id_berita']
                             );
                         $data['tgl'] = date("Y-m-d H:i:s");
-                        $x = $db->insert('buku_tamu', $data);
+                        $data->pesan = $this->msg;
+                        $db = 'batan';
+                        $x = $db->insert('berita_komentar', $data);
                         if($x) $_POST['isi']="";
                 } else {
                         # set the error code so that we can display it

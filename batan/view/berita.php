@@ -11,11 +11,11 @@
 				<div class="area_text"><a href="portal/berita/arsipberita.html"><font style="float:left; margin-left:2px;" color=#FF0000>Klik Disini</font></a>&nbspuntuk melihat berita lainnya</div>
 
                                 <br>
-                               <hr width=90% style="margin-left: 10px; margin-right: 20px;"></hr>
+                               <!--<hr width=90% style="margin-left: 10px; margin-right: 20px;"></hr>
 
         <h4 style="text-align: left; text-transform: none; margin-top: 10px; margin-left: 10px;">Komentar</h4>
 
-		<form action="" method="post" id="">
+		<form action="batan/portal/berita/103.html" method="post" id="">
         <table style="margin-left: 10px;">
 		<tr>
 		<td>Nama </td>
@@ -64,7 +64,7 @@
 				<a href="#" style="text-decoration:none;"><font> 3 </font></a>
 				<a href="#" style="text-decoration:none;" ><font> 4 </font></a>
 				<a href="#" style="text-decoration:none;"><font> 5 </font></a>
-				<a href="#" style="text-decoration:none;"><font color=#f5072e>selanjutnya >></font></a></div>
+				<a href="#" style="text-decoration:none;"><font color=#f5072e>selanjutnya >></font></a></div>-->
 	</div>
         <!--end of area isi-->
 	</div>

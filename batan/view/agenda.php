@@ -2,7 +2,7 @@
     table td {
         vertical-align: top;
         padding: 5px;
-        alignment: left;
+        align: left;
     }
 </style>
 <?php
@@ -32,16 +32,17 @@
 //}else{
 //    $where = $where1.' OR '.$where2.' OR '. $where3;
 //}
-$thn = date('Y');
-if($_POST['kategori']) $kat = $_POST['kategori']; else $kat = 10;
+$thn = 2010;
 if($_POST['tahun']) {
     $tgl = $_POST['tahun'];
 }else {
     $tgl = $thn;
 }
+if($_POST['kategori'] == 'All') $tgl.="";
+    else if($_POST['kategori']) $tgl .= ' and kategori='.$_POST['kategori'];
 //if($_POST['penyelenggara'])
 //  $p = $_POST['penyelenggara'];
-$db->where('kategori='.$kat.' and Year(tgl)='.$tgl.' order by id desc limit 0,20 ');
+$db->where('Year(tgl)='.$tgl.' order by id desc limit 0,20 ');
         $db->get('agenda');
         $agenda = $db->get_fetch();
         $db->where(1);
@@ -56,14 +57,14 @@ $db->where('kategori='.$kat.' and Year(tgl)='.$tgl.' order by id desc limit 0,20
 	<!-- area isi-->
 		<div class="border_area">
 		<form action="" method="post" name="frm" style="margin-left: 20px; margin-top: 10px; margin-bottom:5px;">
-									Pilihan Agenda <select name="kategori">                                                                            
+									Pilihan Agenda <select name="kategori">
+                                                                            <option value="All">All</option>
                                                                             <?php foreach ($kategori_agenda as $k){?>
-                                                                            <option value="<?php echo $k['id']?>"><?php echo $k['nama']?></option>
+                                                                            <option value="<?php echo $k['id']?>" <?php if($_POST['kategori'] == $k['id']) echo "selected"?>><?php echo $k['nama']?></option>
                                                                             <?php }?>
 									</select> &nbsp &nbsp &nbsp
-									Tahun <select name="tahun">
-                                                                            <option value="">----</option>
-                                                                            <option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option></select> &nbsp                                                                           
+									Tahun <select name="tahun">                                                                            
+                                                                            <option value="2011" <?php if($_POST['tahun'] == "2011") echo "selected"?>>2011</option><option value="2010" <?php if($_POST['tahun'] == 2010) echo "selected"?>>2010</option><option value="2009" <?php if($_POST['tahun'] == "2009") echo "selected"?>>2009</option><option value="2008" <?php if($_POST['tahun'] == "2008") echo "selected"?>>2008</option><option value="2007" <?php if($_POST['tahun'] == "2007") echo "selected"?>>2007</option><option value="2006" <?php if($_POST['tahun'] == "2006") echo "selected"?>>2006</option><option value="2005" <?php if($_POST['tahun'] == "2005") echo "selected"?>>2005</option><option value="2004" <?php if($_POST['tahun'] == "2004") echo "selected"?>>2004</option><option value="2003" <?php if($_POST['tahun'] == "2003") echo "selected"?>>2003</option><option value="2002" <?php if($_POST['tahun'] == "2002") echo "selected"?>>2002</option><option value="2001" <?php if($_POST['tahun'] == "2001") echo "selected"?>>2001</option><option value="2000" <?php if($_POST['tahun'] == "2000") echo "selected"?>>2000</option></select> &nbsp
                                                                                                                             
 									<input name="Submit" onclick="" class="butinput" value="Tampilkan Agenda" type="submit" />
 									<input name="txtSecID" value="" type="hidden">
@@ -73,7 +74,7 @@ $db->where('kategori='.$kat.' and Year(tgl)='.$tgl.' order by id desc limit 0,20
 		      <div><p class="area_judul" style="padding-top: 1px"><span>Agenda</span></p> </div><br><br>
 			
                       <table style=" margin-left: 10px; margin-right: 8px; margin-bottom: 10px; border:1px dashed #ccc;">
-			  <th>No</th><th>Nama kegiatan</th><th>Tanggal</th><th>Tempat</th><th>Penyelenggara</th>
+                          <th>No</th><th>Nama kegiatan</th><th width="50px;">Tanggal</th><th>Tempat</th><th width="40px;">Penyelenggara</th>
 			  <?php
                           $i=1;
                           foreach($agenda as $a){?>

@@ -1,7 +1,7 @@
 
 <div class="border_area">
-		<div><p class="area_judul"><span>Arsip Berita Nuklir Terkini</span></p> </div><br><br>
-				<div class="area_text">
+		<div><p class="area_judul"><span>Arsip Berita</span></p> </div><br><br>
+				<!--<div class="area_text">
 				Tanggal:
 		<select name=tanggal>
 		<option value='00'> </option>
@@ -68,7 +68,8 @@
 		</select>
                 <input name="" onclick="" class="" value=" Tampilkan Berita " type="button" style="margin-left: 30px;">
 
-		<br></div><br/>
+		<br></div>--><br/><br>
+                
 
 
                 <table style="list-style-type: none;  margin-top: -20px; font-family: verdana; font-size: 13px; text-decoration: none;">
