@@ -27,9 +27,7 @@
                         };
                     </script>
 
-                    <script>var _wau = _wau || []; _wau.push(["tab", "0025j8x5g8r4", "bts", "right-middle"]);(function() { var s=document.createElement("script");
-                        s.async=true; s.src="http://widgets.amung.us/tab.js";document.getElementsByTagName("head")[0].appendChild(s);})();</script>
-
+                    
 <title>BATAN | Badan Tenaga Nuklir Nasional</title>
 </head>
 <body>
@@ -39,7 +37,7 @@
                                 <!--search&english ver-->
                                 <div id ="search">
                                    
-                                    <div id="cse-search-form" style="width: 100%; margin-top:5px; margin-left:40px; ">Loading</div>
+                                    <div id="cse-search-form" style=" float:right; width: 220px; margin-top:5px; margin-right:-50px;">Loading</div>
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
   google.load('search', '1', {language : 'id', style : google.loader.themes.GREENSKY});
@@ -75,7 +73,6 @@
                                         <li><a href="http://webmail.batan.go.id"><b>Webmail</b></a>
                                         </li>
                                         <li><a href="portal/home/kontak.html" onclick="sub('kontak'); return false"><b>Kontak</b></a>
-
                                         </li>
                                         
                                     </ul>

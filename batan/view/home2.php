@@ -12,7 +12,15 @@
 
                     <script type="text/javascript" src="js/jquery.min.js" ></script>
                     <script type="text/javascript" src="js/jquery-ui.min.js" ></script>
-                    <script type="text/javascript">
+
+<title>BATAN | Badan Tenaga Nuklir Nasional</title>
+</head>
+<body>
+	<div id="container"> <!--frame kotak seluruh-->
+
+                            <div id="header">	<!--header-->
+                                <!--search&english ver-->
+                                <script type="text/javascript">
                         $(document).ready(function(){
                             $("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
                         });
@@ -24,8 +32,6 @@
                         };
                     </script>
 
-                    <script>var _wau = _wau || []; _wau.push(["tab", "0025j8x5g8r4", "bts", "right-middle"]);(function() { var s=document.createElement("script");
-                        s.async=true; s.src="http://widgets.amung.us/tab.js";document.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
 <title>BATAN | Badan Tenaga Nuklir Nasional</title>
 </head>
@@ -36,7 +42,7 @@
                                 <!--search&english ver-->
                                 <div id ="search">
 
-                                    <div id="cse-search-form" style="width: 100%; margin-top:5px; margin-left:40px; ">Loading</div>
+                                    <div id="cse-search-form" style=" float:right; width: 220px; margin-top:5px; margin-right:-50px;">Loading</div>
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
   google.load('search', '1', {language : 'id', style : google.loader.themes.GREENSKY});
@@ -274,8 +280,8 @@
                                                                                 <!--footer-->
                                                                                <div class="footer">
                                                                                     <p align="center" style="margin-left:70px; margin-top: -5px;"> <font size=2.5>Kantor Pusat BATAN</br>
-		Jl. Kuningan Barat, Mampang Prapatan, Jakarta 12710</br></p>
-                                                                                    &nbsp &nbsp &nbsp <font size=1>Website created under cooperation with <a href="http://cs.ilkom.ipb.ac.id" style="color:#ffffff">Ilmu Komputer IPB</a></font> &nbsp &nbsp Telp.(021) 525-1109, Fax.(021) 525-1110, email: humas@batan.go.id
+                                                                                    Jl. Kuningan Barat, Mampang Prapatan, Jakarta 12710</br></p>
+                                                                                    &nbsp &nbsp &nbsp <font size=1>Website created under cooperation with <a href="http://cs.ipb.ac.id" style="color:#ffffff">Ilmu Komputer IPB</a></font> &nbsp &nbsp Telp.(021) 525-1109, Fax.(021) 525-1110, email: humas@batan.go.id
                                                                                     &nbsp  <font size=1>Copyright (c) 2011 </font> <a href="portal/home/faq.html"><font size=2pt color= ffff>Faq</font></a> | <a href="portal/home/sitemap.html"><font size=2pt color= ffff>Sitemap</font></a> | <a href="introbatan.swf"><font size=2pt color= ffff>Credit</font</a></font></p>
                                                                                                             </div>
                                                                                                             <!-- end of footer-->

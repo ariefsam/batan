@@ -13,7 +13,7 @@
                                 <br>
                                <!--<hr width=90% style="margin-left: 10px; margin-right: 20px;"></hr>
 
-        <h4 style="text-align: left; text-transform: none; margin-top: 10px; margin-left: 10px;">Komentar</h4>
+       <!-- <h4 style="text-align: left; text-transform: none; margin-top: 10px; margin-left: 10px;">Komentar</h4>
 
 		<form action="batan/portal/berita/103.html" method="post" id="">
         <table style="margin-left: 10px;">
@@ -42,8 +42,8 @@
             <tr><td></td><td></td><td></td>
                     <td style="text-align: right"><input type="submit" class="" value="  Tambahkan Pesan  " name="" title="Klik untuk menambahkan pesan Anda" id=""/></td></tr>
         </table>
-	</form>
-<?php foreach($list_komentar as $komentar) {?>
+	</form>-->
+<?php /* foreach($list_komentar as $komentar) {?>
                         <div class="border_tamu">
                         <p class="area_text"><?php echo $komentar['nama']?>  </p>
                         <p class="area_text" style="margin-left: 50px;"><?php echo $komentar['komentar']?> </p>
@@ -65,7 +65,9 @@
 				<a href="#" style="text-decoration:none;" ><font> 4 </font></a>
 				<a href="#" style="text-decoration:none;"><font> 5 </font></a>
 				<a href="#" style="text-decoration:none;"><font color=#f5072e>selanjutnya >></font></a></div>-->
-	</div>
+
+ 
+ */?></div>
         <!--end of area isi-->
 	</div>
 
